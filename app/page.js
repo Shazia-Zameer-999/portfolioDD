@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <>
       <main className="flex-grow">
-        <Hero />
-        <Projects />
-        <Approach />
-        <WhyChoose />
-        <Showcase />
-        <Skills />
+        {/* <Hero /> */}
+        {/* <Projects /> */}
+        {/* <Approach /> */}
+        {/* <WhyChoose /> */}
+        {/* <Showcase /> */}
+        {/* <Skills /> */}
 
       </main>
     </>
