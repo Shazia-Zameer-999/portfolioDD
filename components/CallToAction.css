@@ -1,0 +1,52 @@
+.cta-section {
+  position: relative;
+  width: 100%;
+  padding: 8rem 2rem;
+  background-color: #0e172b; /* Matches your dark theme */
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-headline {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 600;
+  color: #e0e7ff;
+  margin: 0 0 2.5rem 0;
+}
+
+.cta-button {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0e172b;
+  background-color: #a3ffb4; /* Your brand's green */
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Background SVG styles */
+.cta-background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.svg-line {
+  stroke: #a3ffb4;
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 2000; /* A large number for the animation */
+  stroke-dashoffset: 2000;
+}

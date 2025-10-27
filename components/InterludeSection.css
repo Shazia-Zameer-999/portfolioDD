@@ -1,0 +1,83 @@
+.interlude-section {
+  --mouse-x: 50vw; /* Default mouse position */
+  --mouse-y: 50vh;
+
+  height: 100vh;
+  width: 100%;
+  background-color: #0e172b; /* A very dark, deep blue */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+
+  /* The subtle grid background */
+  background-image: 
+    linear-gradient(rgba(160, 179, 209, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(160, 179, 209, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* The interactive spotlight effect */
+.interlude-section::before {
+  content: '';
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  
+  /* The radial gradient creates the soft light */
+  background: radial-gradient(
+    circle at center,
+    rgba(34, 211, 238, 0.08), /* Soft Cyan - analogous to your gradient colors */
+    transparent 60%
+  );
+  
+  /* Position the spotlight using the CSS variables from our JS */
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out; /* Smooths the movement slightly */
+}
+
+.content-wrapper {
+  position: relative; /* Ensures content is above the pseudo-element */
+  z-index: 2;
+  padding: 2rem;
+}
+
+.interlude-heading {
+  font-family: 'Inter', sans-serif; /* A clean, modern sans-serif font */
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 600;
+  color: #e0e7ff; /* A soft, off-white */
+  margin: 0;
+  text-shadow: 0 0 10px rgba(224, 231, 255, 0.1);
+}
+
+.interlude-subheading {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #a0b3d1; /* A muted, desaturated blue-gray */
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  color: #a0b3d1;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

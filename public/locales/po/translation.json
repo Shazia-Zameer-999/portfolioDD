@@ -1,0 +1,132 @@
+{
+  "nav_home": "Início",
+  "nav_about": "Sobre",
+  "nav_projects": "Projetos",
+  "nav_contact": "Contato",
+  "nav_languages": "Idiomas",
+  "nav_msg1": "Olá!",
+  "nav_msg2": "Obrigado por visitar meu portfólio. É ótimo ter você aqui! Sinta-se à vontade para olhar ao redor и ver o que eu tenho construído.",
+  "hero_greeting": "Eu construo ",
+  "hero_dynamic_1": "sites modernos.",
+  "hero_dynamic_2": "aplicações web.",
+  "hero_dynamic_3": "experiências digitais.",
+  "hero_description": "Eu sou Daten, uma desenvolvedora full-stack apaixonada por criar soluções digitais bonitas, funcionais e centradas no usuário.",
+  "hero_button_work": "Veja meu trabalho",
+  "hero_button_contact": "Contato",
+  "projects_title": "Meus Projetos",
+  "passop_title": "PassOP - Gerenciador de Senhas",
+  "passop_desc": "Um gerenciador de senhas completo, seguro e full-stack com frontend em React, backend em Node.js/Express e banco de dados MongoDB. Possui autenticação de usuário completa com JWTs.",
+  "passop_cta": "Ver Estudo de Caso →",
+  "about_me_title": "DatenDiva",
+  "about_me_desc": "Desenvolvedora Full-Stack",
+  "portfolio_title": "Site do Portfólio",
+  "portfolio_desc": "O próprio site em que você está! Construído com Next.js, Tailwind CSS e GSAP para uma experiência de usuário suave, animada e moderna.",
+  "portfolio_cta": "Ver Código →",
+  "upcoming_title": "Próximo Projeto...",
+  "upcoming_desc": "Fique atento ao meu próximo projeto, onde explorarei aplicações de chat em tempo real com WebSockets e estratégias modernas de implantação na nuvem.",
+   "why_choose_title": "Por que trabalhar comigo?",
+  "why_choose_subtitle": "Eu combino conhecimento técnico com uma paixão por design para construir produtos que não são apenas funcionais, mas também bonitos e intuitivos.",
+  "why_choose_card1_title": "Design Pixel-Perfect",
+  "why_choose_card1_desc": "Eu dou vida às ideias com um olhar atento aos detalhes, garantindo que cada elemento seja perfeitamente elaborado e responsivo em todos os dispositivos.",
+  "why_choose_card2_title": "Lógica de Backend Robusta",
+  "why_choose_card2_desc": "Eu construo aplicações do lado do servidor seguras, escaláveis e eficientes com APIs limpas e gerenciamento de banco de dados confiável.",
+  "why_choose_card3_title": "Tecnologias Modernas",
+  "why_choose_card3_desc": "Eu me mantenho atualizado com as últimas tendências do setor, usando ferramentas poderosas como Next.js, GSAP e Tailwind CSS para construir soluções de ponta.",
+  "approach_title": "Minha Abordagem",
+  "approach_desc": "Eu acredito em um processo estruturado e centrado no usuário. Começa com uma compreensão profunda do problema, seguida por um planejamento meticuloso, execução limpa e testes rigorosos para entregar soluções que não são apenas funcionais, mas excepcionais.",
+  "approach_btn": "Vamos começar",
+   "showcase_msg": "Veja meu processo",
+   "skills_head": "Minha Especialidade",
+   "skills1": "Principais",
+  "skills2": "Habilidades",
+  "contact_head1": "Fale Comigo",
+  "contact_head2": "Pronto para transformar sua visão em uma experiência digital fluida e centrada no usuário? Atualmente, estou disponível para oportunidades de freelance.",
+  "contact_entry1": "Seu nome",
+  "contact_entry2": "Seu e-mail",
+  "contact_entry3": "Seu número",
+  "contact_entry4": "Sua mensagem",
+  "contact_btn1": "Enviar Mensagem",
+  "contact_btn2": "Enviando...",
+  "contact_thankmsg": "Obrigado!",
+  "footer_description": "Uma desenvolvedora full-stack que cria experiências web modernas.",
+  "footer_menu_title": "Menu",
+  "footer_contact_title": "Entre em Contato",
+  "footer_copyright": " DatenDiva. Todos os direitos reservados.",
+  "about": {
+    "hero": {
+      "title1": "Movido pela curiosidade.",
+      "title2": "Impulsionado por um propósito.",
+      "title3": "O Elemento Humano.",
+      "page_name": "Sobre"
+    },
+    "intro": {
+      "title": "Quem sou eu?",
+      "p1": "Sou <1>Daten</1>, um desenvolvedor curioso que prospera na <2>solução de problemas</2> e na criação de <3>aplicativos focados no usuário</3>. Eu preencho a lacuna entre <4>interfaces bonitas</4> e backends poderosos.",
+      "p2": "Fora do código, adoro explorar novas tecnologias, compartilhar conhecimento e contribuir para projetos que despertam criatividade e inovação. 🚀",
+      "cta_projects": "Ver meus projetos",
+      "cta_connect": "Vamos nos conectar"
+    },
+    "funFacts": {
+      "heading": "Fatos divertidos sobre mim",
+      "subheading": "Pequenas faíscas que definem quem eu sou ✨",
+      "items": [
+        { "fact": "Sempre em busca de inovação", "icon": "🚀" },
+        { "fact": "Alimentado por café e criatividade", "icon": "☕️" },
+        { "fact": "Perdido nos livros, encontrado nas ideias", "icon": "📖" },
+        { "fact": "Colecionando momentos pelo mundo", "icon": "🌍" },
+        { "fact": "Resolvendo problemas com lógica e fluxo", "icon": "🧩" },
+        { "fact": "A vida é melhor com música", "icon": "🎧" },
+        { "fact": "Mentalidade do nascer do sol, energia matinal", "icon": "🌅" },
+        { "fact": "A curiosidade é meu superpoder", "icon": "🔮" }
+      ]
+    }
+  },
+
+  "skills": {
+    "heading": "Meu Arsenal de Tecnologia ⚡",
+    "subheading": "Criando impacto com código — estas são as ferramentas que moldam minha jornada.",
+    "items": [
+      { "src": "/about_img/next.png", "skill": "Next.js", "info": "Eu uso o Next.js para construir aplicações web rápidas, escaláveis e amigáveis para SEO com renderização no lado do servidor e arquitetura moderna." },
+      { "src": "/about_img/react.png", "skill": "React", "info": "React é a minha escolha para criar UIs fluidas, reutilizáveis e interativas que parecem modernas e fáceis de usar." },
+      { "src": "/about_img/mongodb.png", "skill": "MongoDB", "info": "Para armazenamento de dados, eu amo o MongoDB — um banco de dados NoSQL flexível que mantém as aplicações dinâmicas e escaláveis." },
+      { "src": "/about_img/mongoose.png", "skill": "Mongoose", "info": "Com o Mongoose, torno o trabalho com o MongoDB limpo e estruturado usando modelos baseados em esquema." },
+      { "src": "/about_img/node_js.png", "skill": "Node.js", "info": "O Node.js alimenta meus backends — leve, rápido e perfeito para construir APIs que escalam com facilidade." },
+      { "src": "/about_img/tailwind_css.png", "skill": "TailwindCSS", "info": "Eu estilizo com Tailwind — utility-first, responsivo e extremamente rápido para dar vida a designs modernos." },
+      { "src": "/about_img/gsap.png", "skill": "GSAP", "info": "Eu adiciono personalidade com GSAP — animações suaves e de alto desempenho que mantêm os usuários engajados." },
+      { "src": "/about_img/python.png", "skill": "Python", "info": "Além da web, uso Python para resolver problemas, automação e explorar soluções baseadas em dados." },
+      { "src": "/about_img/js.png", "skill": "JavaScript", "info": "O JavaScript está no centro de tudo que eu construo — tornando a web dinâmica, interativa e viva." },
+      { "src": "/about_img/css.png", "skill": "CSS", "info": "Com o CSS, transformo layouts brutos em designs visualmente atraentes, responsivos e fáceis de usar." },
+      { "src": "/about_img/html.png", "skill": "HTML", "info": "O HTML é a base — eu o uso para estruturar conteúdo que é limpo, acessível e semântico." },
+      { "src": "/about_img/express.png", "skill": "Express.js", "info": "Eu construo backends rápidos, escaláveis e seguros com o Express.js — alimentando APIs que tornam os aplicativos fluidos e confiáveis." },
+      { "src": "/about_img/git.png", "skill": "Git & GitHub", "info": "Eu uso Git e GitHub para rastrear código, colaborar de forma eficaz e entregar projetos que se fortalecem com o trabalho em equipe." }
+    ]
+  },
+  "contact": {
+"slider": {
+"title1": "Vamos construir algo ótimo juntos.",
+"title2": "Vamos nos conectar...",
+"title3": "Seu próximo projeto começa aqui.",
+"pageName": "Contato"
+},
+"interlude": {
+"heading": "Grandes coisas são construídas juntas.",
+"subheading": "Vamos começar uma conversa."
+}
+},
+"projects": {
+  "slider": {
+    "title1": "Arquitetando para escalar.",
+    "title2": "Dando vida às ideias.",
+    "title3": "Onde os dados encontram o design.",
+    "pageName": "Projetos"
+  },
+  "elasticString": {
+  "intro": "Onde ideias complexas se manifestam através de um código elegante.",
+  "outro": "Criando experiências de usuário dinâmicas e responsivas."
+},
+"cta": {
+  "headline": "Vamos construir o futuro juntos.",
+  "button": "Entre em contato"
+}
+}
+}

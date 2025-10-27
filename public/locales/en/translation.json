@@ -1,0 +1,132 @@
+{
+"nav_home": "Home",
+"nav_about": "About",
+"nav_projects": "Projects",
+"nav_contact": "Contact",
+"nav_languages":"Languages",
+"nav_msg1":"Hello there!",
+"nav_msg2":"Thanks for visiting my portfolio. It's great to have you here! Feel free to look around and see what I've been building.",
+"hero_greeting":"I Build ",
+"hero_dynamic_1": "Modern Websites.",
+"hero_dynamic_2": "Web Applications.",
+"hero_dynamic_3": "Digital Experiences.",
+"hero_description":"I'm Daten, a full-stack developer passionate about crafting beautiful, functional, and user-centric digital solutions.",
+"hero_button_work":"View my work",
+"hero_button_contact":"Contact",
+ "projects_title": "My Work",
+  "passop_title": "PassOP - Password Manager",
+  "passop_desc": "A complete, secure, full-stack password manager with a React frontend, Node.js/Express backend, and MongoDB database. Features full user authentication with JWTs.",
+  "passop_cta": "View Case Study →",
+  "about_me_title": "DatenDiva",
+  "about_me_desc": "Full-Stack Developer",
+  "portfolio_title": "Portfolio Website",
+  "portfolio_desc": "The very site you're on! Built with Next.js, Tailwind CSS, and GSAP for a smooth, animated, and modern user experience.",
+  "portfolio_cta": "View Code →",
+  "upcoming_title": "Upcoming Project...",
+  "upcoming_desc": "Stay tuned for my next project, where I'll be exploring real-time chat applications with WebSockets and modern cloud deployment strategies." , "why_choose_title": "Why Work With Me?",
+  "why_choose_subtitle": "I combine technical expertise with a passion for design to build products that are not only functional but also beautiful and intuitive.",
+  "why_choose_card1_title": "Pixel-Perfect Design",
+  "why_choose_card1_desc": "I bring ideas to life with a keen eye for detail, ensuring every element is perfectly crafted and responsive on all devices.",
+  "why_choose_card2_title": "Robust Backend Logic",
+  "why_choose_card2_desc": "I build secure, scalable, and efficient server-side applications with clean APIs and reliable database management.",
+  "why_choose_card3_title": "Modern Technologies",
+  "why_choose_card3_desc": "I stay up-to-date with the latest industry trends, using powerful tools like Next.js, GSAP, and Tailwind CSS to build cutting-edge solutions.",
+  "approach_title": "My Approach",
+  "approach_desc": "I believe in a structured, user-centric process. It starts with a deep understanding of the problem, followed by meticulous planning, clean execution, and rigorous testing to deliver solutions that are not just functional, but exceptional.",
+  "approach_btn":"Let's get started",
+  "showcase_msg":"Watch My Process",
+  "skills_head":"My Expertise",
+  "skills1":"Core",
+  "skills2":"Skills",
+  "contact_head1":"Contact Me",
+  "contact_head2":"Ready to turn your vision into a seamless, user-centric digital experience? I'm currently available for freelance opportunities.",
+  "contact_entry1":"Your name",
+  "contact_entry2":"Your email",
+  "contact_entry3":"Your number",
+  "contact_entry4":"Your message",
+  "contact_btn1":"Send Message",
+  "contact_btn2":"Sending...",
+  "contact_thankmsg":"Thank You!",
+  "footer_description": "A full-stack developer crafting modern web experiences.",
+  "footer_menu_title": "Menu",
+  "footer_contact_title": "Get in Touch",
+  "footer_copyright": " Datendiva. All Rights Reserved.",
+
+  "about": {
+    "hero": {
+      "title1": "Fuelled by Curiosity.",
+      "title2": "Driven by Purpose.",
+      "title3": "The Human Element.",
+      "page_name": "About"
+    },
+    "intro": {
+      "title": "Who Am I?",
+      "p1": "I’m <1>Daten</1>, a curious developer who thrives on <2>problem-solving</2> and crafting <3>user-focused applications</3>. I bridge the gap between <4>beautiful interfaces</4> and powerful backends.",
+      "p2": "Outside of code, I love exploring new technologies, sharing knowledge, and contributing to projects that spark creativity and innovation. 🚀",
+      "cta_projects": "View My Projects",
+      "cta_connect": "Let’s Connect"
+    },
+    "funFacts": {
+      "heading": "Fun Facts About Me",
+      "subheading": "Little sparks that define who I am ✨",
+      "items": [
+        { "fact": "Always chasing innovation", "icon": "🚀" },
+        { "fact": "Fueled by coffee & creativity", "icon": "☕️" },
+        { "fact": "Lost in books, found in ideas", "icon": "📖" },
+        { "fact": "Collecting moments worldwide", "icon": "🌍" },
+        { "fact": "Solving problems with logic & flow", "icon": "🧩" },
+        { "fact": "Life is better with music", "icon": "🎧" },
+        { "fact": "Sunrise mindset, morning energy", "icon": "🌅" },
+        { "fact": "Curiosity is my superpower", "icon": "🔮" }
+      ]
+    }
+  
+},
+"skills": {
+    "heading": "My Tech Arsenal ⚡",
+    "subheading": "Crafting impact with code — these are the tools that shape my journey.",
+    "items": [
+      { "src": "/about_img/next.png", "skill": "Next.js", "info": "I use Next.js to build fast, scalable, and SEO-friendly web apps with server-side rendering and modern architecture." },
+      { "src": "/about_img/react.png", "skill": "React", "info": "React is my go-to for crafting smooth, reusable, and interactive UIs that feel modern and user-friendly." },
+      { "src": "/about_img/mongodb.png", "skill": "MongoDB", "info": "For data storage, I love MongoDB — a flexible NoSQL database that keeps apps dynamic and scalable." },
+      { "src": "/about_img/mongoose.png", "skill": "Mongoose", "info": "With Mongoose, I make working with MongoDB clean and structured using schema-based models." },
+      { "src": "/about_img/node_js.png", "skill": "Node.js", "info": "Node.js powers my backends — lightweight, fast, and perfect for building APIs that scale with ease." },
+      { "src": "/about_img/tailwind_css.png", "skill": "TailwindCSS", "info": "I style with Tailwind — utility-first, responsive, and lightning-fast to bring modern designs to life." },
+      { "src": "/about_img/gsap.png", "skill": "GSAP", "info": "I add personality with GSAP — smooth, high-performance animations that keep users engaged." },
+      { "src": "/about_img/python.png", "skill": "Python", "info": "Beyond the web, I use Python for problem-solving, automation, and exploring data-driven solutions." },
+      { "src": "/about_img/js.png", "skill": "JavaScript", "info": "JavaScript is at the core of everything I build — making the web dynamic, interactive, and alive." },
+      { "src": "/about_img/css.png", "skill": "CSS", "info": "With CSS, I transform raw layouts into visually appealing, responsive, and user-friendly designs." },
+      { "src": "/about_img/html.png", "skill": "HTML", "info": "HTML is the foundation — I use it to structure content that’s clean, accessible, and semantic." },
+      { "src": "/about_img/express.png", "skill": "Express.js", "info": "I build fast, scalable, and secure backends with Express.js — powering APIs that make apps smooth and reliable." },
+      { "src": "/about_img/git.png", "skill": "Git & GitHub", "info": "I use Git & GitHub to track code, collaborate effectively, and ship projects that grow stronger with teamwork." }
+    ]
+  },
+  "contact": {
+      "slider": {
+      "title1": "Let's Build Something Great Together.",
+      "title2": "Let's Connect...",
+      "title3": "Your Next Project Starts Here.",
+      "pageName": "Contact"
+},
+      "interlude": {
+      "heading": "Great things are built together.",
+      "subheading": "Let's start a conversation."
+}
+  },
+  "projects": {
+"slider": {
+"title1": "Architecting for Scale.",
+"title2": "Bringing Ideas to Life.",
+"title3": "Where Data Meets Design.",
+"pageName": "Projects"
+},
+"elasticString": {
+"intro": "Where complex ideas manifest through elegant code.",
+"outro": "Crafting dynamic and responsive user experiences."
+},
+"cta": {
+"headline": "Let's build the future, together.",
+"button": "Get in Touch"
+}
+}
+}

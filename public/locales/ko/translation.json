@@ -1,0 +1,131 @@
+{
+  "nav_home": "홈",
+  "nav_about": "소개",
+  "nav_projects": "프로젝트",
+  "nav_contact": "연락처",
+  "nav_languages": "언어",
+  "nav_msg1": "안녕하세요!",
+  "nav_msg2": "제 포트폴리오를 방문해 주셔서 감사합니다. 이곳에 오신 것을 환영합니다! 자유롭게 둘러보시고 제가 만든 것들을 확인해 보세요.",
+  "hero_greeting": "저는 만듭니다 ",
+  "hero_dynamic_1": "현대적인 웹사이트를.",
+  "hero_dynamic_2": "웹 애플리케이션을.",
+  "hero_dynamic_3": "디지털 경험을.",
+  "hero_description": "저는 아름답고 기능적이며 사용자 중심적인 디지털 솔루션을 만드는 데 열정적인 풀스택 개발자, 데이터디바 입니다.",
+  "hero_button_work": "내 작업 보기",
+  "hero_button_contact": "연락처",
+  "projects_title": "내 프로젝트",
+  "passop_title": "PassOP - 비밀번호 관리자",
+  "passop_desc": "React 프론트엔드, Node.js/Express 백엔드 및 MongoDB 데이터베이스를 갖춘 완전하고 안전한 풀스택 비밀번호 관리자입니다. JWT를 사용한 전체 사용자 인증 기능을 제공합니다.",
+  "passop_cta": "사례 연구 보기 →",
+  "about_me_title": "데이터디바",
+  "about_me_desc": "풀스택 개발자",
+  "portfolio_title": "포트폴리오 웹사이트",
+  "portfolio_desc": "바로 당신이 보고 있는 이 사이트입니다! Next.js, Tailwind CSS, GSAP로 구축하여 부드럽고 애니메이션이 적용된 현대적인 사용자 경험을 제공합니다.",
+  "portfolio_cta": "코드 보기 →",
+  "upcoming_title": "예정된 프로젝트...",
+  "upcoming_desc": "WebSockets와 현대적인 클라우드 배포 전략을 사용하여 실시간 채팅 애플리케이션을 탐색할 다음 프로젝트를 기대해 주세요.",
+  "why_choose_title": "왜 저와 함께 일해야 할까요?",
+  "why_choose_subtitle": "저는 기술적 전문 지식과 디자인에 대한 열정을 결합하여 기능적일 뿐만 아니라 아름답고 직관적인 제품을 만듭니다.",
+  "why_choose_card1_title": "픽셀 퍼펙트 디자인",
+  "why_choose_card1_desc": "저는 세부 사항에 대한 예리한 안목으로 아이디어를 실현하며, 모든 요소가 모든 기기에서 완벽하게 제작되고 반응하도록 보장합니다.",
+  "why_choose_card2_title": "견고한 백엔드 로직",
+  "why_choose_card2_desc": "저는 깔끔한 API와 신뢰할 수 있는 데이터베이스 관리를 통해 안전하고 확장 가능하며 효율적인 서버 측 애플리케이션을 구축합니다.",
+  "why_choose_card3_title": "현대 기술",
+  "why_choose_card3_desc": "저는 최신 산업 동향을 파악하고 Next.js, GSAP, Tailwind CSS와 같은 강력한 도구를 사용하여 최첨단 솔루션을 구축합니다.",
+  "approach_title": "나의 접근 방식",
+  "approach_desc": "저는 구조화되고 사용자 중심적인 프로세스를 믿습니다. 문제에 대한 깊은 이해에서 시작하여 세심한 계획, 깔끔한 실행 및 엄격한 테스트를 거쳐 기능적일 뿐만 아니라 뛰어난 솔루션을 제공합니다.",
+  "approach_btn": "시작해 봅시다",
+  "showcase_msg": "제 작업 과정 보기",
+  "skills_head": "저의 전문 분야",
+  "skills1": "핵심",
+  "skills2": "역량",
+  "contact_head1": "문의하기",
+  "contact_head2": "당신의 비전을 매끄럽고 사용자 중심적인 디지털 경험으로 바꿀 준비가 되셨나요? 현재 프리랜서로 활동 중입니다.",
+  "contact_entry1": "이름",
+  "contact_entry2": "이메일",
+  "contact_entry3": "연락처",
+  "contact_entry4": "메시지",
+  "contact_btn1": "메시지 보내기",
+  "contact_btn2": "보내는 중...",
+  "contact_thankmsg": "감사합니다!",
+  "footer_description": "현대적인 웹 경험을 만드는 풀스택 개발자.",
+  "footer_menu_title": "메뉴",
+  "footer_contact_title": "연락하기",
+  "footer_copyright": " 데이터디바. 모든 권리 보유.",
+  "about": {
+    "hero": {
+      "title1": "호기심으로 가득 차 있습니다.",
+      "title2": "목표에 의해 움직입니다.",
+      "title3": "인간적인 요소.",
+      "page_name": "소개"
+    },
+    "intro": {
+      "title": "저는 누구일까요?",
+      "p1": "저는 <1>Daten</1>입니다. <2>문제 해결</2>과 <3>사용자 중심 애플리케이션</3> 제작을 즐기는 호기심 많은 개발자입니다. <4>아름다운 인터페이스</4>와 강력한 백엔드 사이의 간극을 메웁니다.",
+      "p2": "코딩 외에는 새로운 기술을 탐구하고, 지식을 공유하며, 창의성과 혁신을 불러일으키는 프로젝트에 기여하는 것을 좋아합니다. 🚀",
+      "cta_projects": "제 프로젝트 보기",
+      "cta_connect": "연락해요"
+    },
+    "funFacts": {
+      "heading": "저에 대한 재미있는 사실들",
+      "subheading": "저를 정의하는 작은 불꽃들 ✨",
+      "items": [
+        { "fact": "항상 혁신을 추구합니다", "icon": "🚀" },
+        { "fact": "커피와 창의력으로 움직입니다", "icon": "☕️" },
+        { "fact": "책 속에서 길을 잃고, 아이디어 속에서 길을 찾습니다", "icon": "📖" },
+        { "fact": "전 세계의 순간들을 수집합니다", "icon": "🌍" },
+        { "fact": "논리와 흐름으로 문제를 해결합니다", "icon": "🧩" },
+        { "fact": "음악과 함께하는 삶이 더 좋습니다", "icon": "🎧" },
+        { "fact": "일출의 마음가짐, 아침의 에너지", "icon": "🌅" },
+        { "fact": "호기심은 저의 초능력입니다", "icon": "🔮" }
+      ]
+    }
+  },
+  "skills": {
+    "heading": "나의 기술 무기고 ⚡",
+    "subheading": "코드로 영향력 만들기 — 이것들이 저의 여정을 만드는 도구들입니다.",
+    "items": [
+      { "src": "/about_img/next.png", "skill": "Next.js", "info": "저는 Next.js를 사용하여 서버 사이드 렌더링과 현대적인 아키텍처를 갖춘 빠르고 확장 가능하며 SEO 친화적인 웹 앱을 구축합니다." },
+      { "src": "/about_img/react.png", "skill": "React", "info": "React는 현대적이고 사용자 친화적인 느낌의 부드럽고 재사용 가능하며 상호작용적인 UI를 만드는 데 제가 가장 선호하는 도구입니다." },
+      { "src": "/about_img/mongodb.png", "skill": "MongoDB", "info": "데이터 저장을 위해 저는 MongoDB를 좋아합니다. 앱을 동적이고 확장 가능하게 유지하는 유연한 NoSQL 데이터베이스입니다." },
+      { "src": "/about_img/mongoose.png", "skill": "Mongoose", "info": "Mongoose를 사용하면 스키마 기반 모델을 사용하여 MongoDB 작업을 깔끔하고 구조화되게 만듭니다." },
+      { "src": "/about_img/node_js.png", "skill": "Node.js", "info": "Node.js는 제 백엔드를 구동합니다. 가볍고 빠르며 쉽게 확장할 수 있는 API를 구축하는 데 완벽합니다." },
+      { "src": "/about_img/tailwind_css.png", "skill": "TailwindCSS", "info": "저는 Tailwind로 스타일을 지정합니다. 유틸리티 우선, 반응형이며 현대적인 디자인에 생명을 불어넣는 데 번개처럼 빠릅니다." },
+      { "src": "/about_img/gsap.png", "skill": "GSAP", "info": "저는 GSAP로 개성을 더합니다. 사용자의 참여를 유도하는 부드럽고 고성능의 애니메이션입니다." },
+      { "src": "/about_img/python.png", "skill": "Python", "info": "웹을 넘어 문제 해결, 자동화 및 데이터 기반 솔루션 탐색을 위해 Python을 사용합니다." },
+      { "src": "/about_img/js.png", "skill": "JavaScript", "info": "JavaScript는 제가 만드는 모든 것의 핵심입니다. 웹을 동적이고 상호작용적이며 살아있게 만듭니다." },
+      { "src": "/about_img/css.png", "skill": "CSS", "info": "CSS를 사용하여 원시 레이아웃을 시각적으로 매력적이고 반응이 빠르며 사용자 친화적인 디자인으로 변환합니다." },
+      { "src": "/about_img/html.png", "skill": "HTML", "info": "HTML은 기초입니다. 깨끗하고 접근 가능하며 의미 있는 콘텐츠를 구성하는 데 사용합니다." },
+      { "src": "/about_img/express.png", "skill": "Express.js", "info": "저는 Express.js로 빠르고 확장 가능하며 안전한 백엔드를 구축하여 앱을 원활하고 신뢰할 수 있게 만드는 API를 구동합니다." },
+      { "src": "/about_img/git.png", "skill": "Git & GitHub", "info": "저는 Git과 GitHub를 사용하여 코드를 추적하고 효과적으로 협업하며 팀워크로 더 강해지는 프로젝트를 출시합니다." }
+    ]
+  },
+  "contact": {
+"slider": {
+"title1": "함께 멋진 것을 만들어 봅시다.",
+"title2": "연결합시다...",
+"title3": "다음 프로젝트는 여기서 시작됩니다.",
+"pageName": "연락처"
+},
+"interlude": {
+"heading": "위대한 것은 함께 만들어집니다.",
+"subheading": "대화를 시작해 봅시다."
+}
+},
+"projects": {
+  "slider": {
+    "title1": "확장을 위한 아키텍처.",
+    "title2": "아이디어를 현실로.",
+    "title3": "데이터와 디자인이 만나는 곳.",
+    "pageName": "프로젝트"
+  },
+  "elasticString": {
+  "intro": "복잡한 아이디어가 우아한 코드로 구현되는 곳.",
+  "outro": "역동적이고 반응적인 사용자 경험을 창조합니다."
+},
+"cta": {
+  "headline": "함께 미래를 만들어 갑시다.",
+  "button": "문의하기"
+}
+}
+}
