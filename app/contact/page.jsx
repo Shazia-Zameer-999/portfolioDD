@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import ImageSlider from '@/components/ImageSlider'
 import { useTranslation } from 'react-i18next';
-import ContactForm from '@/components/contact_form2';
+import ContactForm from '@/components/Contact_form2';
 import InterludeSection from '@/components/InterludeSection';
 
 
