@@ -51,13 +51,13 @@ const Projects = () => {
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div className="project-card lg:col-span-2 bg-slate-900 p-8 rounded-2xl shadow-lg hover:shadow-green-500/20 transition-shadow duration-300">
-                        <h3 className="text-3xl font-bold text-white mb-4">{isMounted ? t('passop_title') : "PassOP - Password Manager"}</h3>
+                        <h3 className="text-3xl font-bold text-white mb-4">{isMounted ? t('passop_title') : "Passion Meets Code"}</h3>
                         <p className="text-gray-400 mb-6">
-                            {isMounted ? t('passop_desc') : "A complete, secure, full-stack password manager with a React frontend, Node.js/Express backend, and MongoDB database. Features full user authentication with JWTs."}
+                            {isMounted ? t('passop_desc') : "I’m Daten — a developer who loves blending creativity with logic. I build modern websites and apps that don’t just work — they connect, engage, and inspire. Every line of code reflects my curiosity and craft."}
                         </p>
                         {/* You can add a screenshot here if you like */}
-                        <TransitionLink href="https://github.com/Shazia-Zameer-999/PassOP-Password-Manager" className="text-green-400 font-semibold hover:underline ">
-                            {isMounted ? t('passop_cta') : "View Case Study →"}
+                        <TransitionLink href="/projects" className="text-green-400 font-semibold hover:underline ">
+                            {isMounted ? t('passop_cta') : "Explore My Work →"}
                         </TransitionLink>
                     </div>
 
@@ -78,7 +78,7 @@ const Projects = () => {
                         <p className="text-gray-400 mb-6">
                             {isMounted ? t('portfolio_desc') : "The very site you're on! Built with Next.js, Tailwind CSS, and GSAP for a smooth, animated, and modern user experience."}
                         </p>
-                        <a href="https://github.com/Shazia-Zameer-999/my-portfolio" target="_blank" rel="noopener noreferrer" className="text-green-400 font-semibold hover:underline">
+                        <a href="https://github.com/Shazia-Zameer-999/portfolioDD" target="_blank" rel="noopener noreferrer" className="text-green-400 font-semibold hover:underline">
                             {isMounted ? t('portfolio_cta') : "View Code →"}
                         </a>
                     </div>
