@@ -118,7 +118,7 @@ const ContactForm = () => {
                         {errors.number && <p className="mt-2 text-sm text-red-600 dark:text-red-500">{errors.number}</p>}
                     </div>
                     <div className="sm:col-span-2">
-                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{isMounted ? t('contact_entry3') : 'Your message'}</label>
+                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{isMounted ? t('contact_entry4') : 'Your message'}</label>
                         <textarea id="message" rows="6" name="message" onChange={handleChange} value={formData.message} className={`shadow-sm bg-gray-50 border text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white ${errors.message ? 'border-red-500 focus:border-red-500 dark:border-red-500' : 'border-gray-300 focus:border-primary-500'}`} placeholder="Leave a comment..."></textarea>
                         {errors.message && <p className="mt-2 text-sm text-red-600 dark:text-red-500">{errors.message}</p>}
                     </div>
