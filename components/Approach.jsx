@@ -5,6 +5,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
 import ContactForm from './ContactForm';
+import '../i18n';
+
 
 
 

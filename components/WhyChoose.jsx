@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
+import '../i18n';
+
 
 
 gsap.registerPlugin(ScrollTrigger);

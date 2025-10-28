@@ -6,6 +6,8 @@ import CallToAction from '@/components/CallToAction'
 import ElasticString from '@/components/ElasticString'
 import { useTranslation } from 'react-i18next';
 
+
+
 const page = () => {
     const { t } = useTranslation();
     const [isMounted, setIsMounted] = useState(false);

@@ -1,5 +1,6 @@
 // src/app/layout.js
 
+// import '../i18n';
 import './globals.css';
 import ClientLayout from './ClientLayout';
 
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ClientLayout>{children}</ClientLayout>
-      
+
       </body>
     </html>
   );

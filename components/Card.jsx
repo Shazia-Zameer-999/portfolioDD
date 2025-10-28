@@ -1,5 +1,7 @@
 "use client"
 import React from "react"
+import '../i18n';
+
 
 const Card = ({ src, skill, info, className }) => {
     return (

@@ -4,6 +4,8 @@ import React, { useRef, useEffect,useState } from 'react';
 import './InterludeSection.css'; // We will create this CSS file next
 import { ArrowDown } from 'lucide-react'; // 'lucide-react' is great for icons
 import { useTranslation } from 'react-i18next';
+import '../i18n';
+
 
 
 const InterludeSection = () => {

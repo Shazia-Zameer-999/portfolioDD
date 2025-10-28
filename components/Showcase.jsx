@@ -4,6 +4,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
+import '../i18n';
+
 
 
 // We must register the ScrollTrigger plugin with GSAP to activate it

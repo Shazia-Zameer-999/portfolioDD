@@ -1,5 +1,6 @@
 "use client";
 import '../i18n';
+
 import { LoadingProvider, useLoading } from '@/context/LoadingContext';
 import Preloader from '@/components/Preloader';
 import Navbar from '@/components/Navbar';

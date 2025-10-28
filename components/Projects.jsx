@@ -5,6 +5,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
 import { useTranslation } from 'react-i18next';
+import '../i18n';
+
 
 
 const Projects = () => {

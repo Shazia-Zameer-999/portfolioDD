@@ -1,5 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
+import '../i18n';
+
 import ImageSlider from '@/components/ImageSlider'
 import { useTranslation } from 'react-i18next';
 import ContactForm from '@/components/Contact_form2';
