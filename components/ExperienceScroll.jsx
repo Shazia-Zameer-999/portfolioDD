@@ -27,7 +27,7 @@ const ExperienceScroll_contact = () => {
     });
 
     return () => {
-      // animation.scrollTrigger?.kill();
+      
       animation.kill();
     };
   }, []);

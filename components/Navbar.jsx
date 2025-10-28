@@ -107,7 +107,6 @@ const Navbar = () => {
                                     <span className='sm:flex hidden'>{isMounted ? t('nav_languages') : 'Languages'}</span>
                                     <img className='w-10 fill-black' src="/lang_icon.png" alt="lang_icon" />
 
-                                    {/* A little chevron icon that rotates when the menu is open */}
                                     <svg className={`w-4 h-4 transition-transform duration-300 ${isLangOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                                 </button>
 
@@ -144,7 +143,7 @@ const Navbar = () => {
                                     </div>
                                 )}
                             </div>
-                            {/* --- THE NEW, ANIMATED HAMBURGER BUTTON --- */}
+                            
                             <button
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                                 className={`md:hidden text-white z-[110] p-2 rounded-full transition-colors duration-300 hover:bg-white/10 ${isMenuOpen ? 'menu-open' : ''}`}
@@ -191,7 +190,7 @@ const Navbar = () => {
 
             )}
 
-            {/* --- THE NEW, IMMERSIVE MOBILE MENU OVERLAY --- */}
+           
             <div className={`
                 fixed inset-0 bg-black/80 backdrop-blur-lg z-[100] 
                 transform transition-all duration-500 ease-in-out 
@@ -199,7 +198,7 @@ const Navbar = () => {
                 md:hidden
             `}>
                 <div className="flex flex-col items-center justify-center h-full space-y-8">
-                    {/* We add the 'mobile-nav-link' class for our GSAP animation */}
+                  
                     <TransitionLink href="/" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link animated-underline text-3xl font-semibold text-gray-300 hover:text-green-400">{isMounted ? t('nav_home') : 'Home'}</TransitionLink>
                     <TransitionLink href="/about" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link text-3xl font-semibold animated-underline text-gray-300 hover:text-green-400">{isMounted ? t('nav_about') : 'About'}</TransitionLink>
                     <TransitionLink href="/projects" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link text-3xl animated-underline font-semibold text-gray-300 hover:text-green-400">{isMounted ? t('nav_projects') : 'Projects'}</TransitionLink>

@@ -16,13 +16,13 @@ async function connectToDatabase() {
     });
 }
 
-// This is the handler for POST requests.
+
 export async function POST(req) {
     try {
         await connectToDatabase();
         const data = await req.json();
 
-        // Use the Contact model to create a new document in the database
+
         const newContact = await Contact.create(data);
         await resend.emails.send({
             from: 'onboarding@resend.dev',
@@ -43,12 +43,12 @@ export async function POST(req) {
         if (error.name === 'ValidationError') {
             let errors = {};
 
-            // Go through each validation error and create a map of field: message
+
             for (const field in error.errors) {
                 errors[field] = error.errors[field].message;
             }
 
-            // Return a 400 status with a generic message and the detailed errors object
+
             return NextResponse.json({
                 success: false,
                 message: "Validation failed. Please check your input.",
@@ -57,7 +57,7 @@ export async function POST(req) {
         }
 
         console.error(error);
-        // A more specific error message can be returned based on the error type
+
         return NextResponse.json({ success: false, message: 'An error occurred.', error: error.message }, { status: 500 });
     }
 }

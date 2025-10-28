@@ -2,17 +2,16 @@ import React from 'react';
 
 const Logo = ({ onLogoClick }) => {
     const handleLogoClick = (event) => {
-        // We still prevent the default navigation behavior.
+    
         event.preventDefault();
 
-        // If the onLogoClick prop was provided, we call it.
         if (onLogoClick) {
             onLogoClick();
         }
     };
     return (
         <a href="/" className="nav-item" onClick={handleLogoClick}>
-            {/* The SVG container is wider to accommodate the new text */}
+          
             <svg width="210" height="40" viewBox="0 0 210 40" xmlns="http://www.w3.org/2000/svg" aria-label="DatenDiva Logo">
                 <style>
                     {`
@@ -84,9 +83,9 @@ const Logo = ({ onLogoClick }) => {
                     </linearGradient>
                 </defs>
 
-                {/* --- The SVG Content (Updated) --- */}
+             
 
-                {/* The text is now "DatenDiva" */}
+           
                 <text x="0" y="30" className="logo-text">
                     <tspan className="logo-letter letter-1">D</tspan>
                     <tspan className="logo-letter letter-2">a</tspan>
@@ -99,7 +98,6 @@ const Logo = ({ onLogoClick }) => {
                     <tspan className="logo-letter letter-9">a</tspan>
                 </text>
 
-                {/* The circle's 'cx' value has been changed to move it to the right of the new text. */}
                 <circle cx="170" cy="29" r="5" className="logo-dot" />
             </svg>
         </a>

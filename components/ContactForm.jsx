@@ -41,11 +41,11 @@ const ContactForm = ({ onClose }) => {
 
             if (response.ok) {
                 setResponseMessage({ type: 'success', text: result.message });
-                // Reset form after successful submission
+                
                 setFormData({ name: '', email: '', number: '', message: '' });
                 setErrors({});
 
-                setTimeout(() => onClose(), 2000); // Close form after 2 seconds
+                setTimeout(() => onClose(), 2000);
             } else {
                 setResponseMessage({ type: 'error', text: result.message || 'Something went wrong.' });
                 if (result.errors) {
@@ -59,7 +59,7 @@ const ContactForm = ({ onClose }) => {
         }
     };
 
-    // If there's a success message, we can show a confirmation screen
+    
     if (responseMessage && responseMessage.type === 'success') {
         return (
             <section className="bg-white dark:bg-gray-900 absolute inset-0 z-20 flex items-center justify-center">

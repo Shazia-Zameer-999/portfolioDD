@@ -29,14 +29,14 @@ const page = ({ }) => {
             <section className="py-16 px-6 bg-gray-900 relative overflow-hidden">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-                    {/* Left - Image with unique animation */}
+                    
                     <div className="flex justify-center relative group">
                         <div className="absolute -inset-2 bg-gradient-to-tr from-green-400 to-blue-500 rounded-3xl blur opacity-50 group-hover:opacity-80 transition duration-700"></div>
                         <Image
                             src="/profile.svg"
                             alt="Profile Picture"
-                            width={288} // 72 * 4 = 288px
-                            height={288} // 72 * 4 = 288px
+                            width={288} 
+                            height={288} 
                             className="relative rounded-3xl shadow-2xl object-cover transform transition-transform duration-700 group-hover:rotate-3 group-hover:scale-105"
                         />
                     </div>

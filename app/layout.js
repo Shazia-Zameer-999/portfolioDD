@@ -1,6 +1,3 @@
-// src/app/layout.js
-
-// import '../i18n';
 import './globals.css';
 import ClientLayout from './ClientLayout';
 

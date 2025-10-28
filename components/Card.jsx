@@ -44,12 +44,7 @@ const Card = ({ src, skill, info, className }) => {
                     {info}
                 </p>
 
-                {/* Call to action */}
-                {/* <button className="mt-2 px-4 py-2 rounded-xl text-sm font-semibold 
-          bg-gradient-to-r from-green-400 to-purple-500 text-white shadow-md
-          hover:shadow-lg hover:shadow-green-500/40 transition-all duration-500">
-                    Learn More →
-                </button> */}
+                
             </div>
 
             {/* Bottom accent glow */}

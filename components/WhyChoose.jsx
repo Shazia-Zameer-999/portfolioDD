@@ -53,10 +53,10 @@ const WhyChoose = () => {
 
                 <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    {/* Feature Card 1: Pixel-Perfect Design */}
+                  
                     <div className="feature-card bg-slate-900 p-8 rounded-2xl border border-slate-800">
                         <div className="mb-4 text-green-400">
-                            {/* SVG Icon for Design */}
+                         
                             <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z"></path></svg>
                         </div>
                         <h3 className="text-2xl font-bold mb-2">{isMounted ? t('why_choose_card1_title') : 'Pixel-Perfect Design'}</h3>
@@ -65,10 +65,10 @@ const WhyChoose = () => {
                         </p>
                     </div>
 
-                    {/* Feature Card 2: Robust Backend */}
+                    
                     <div className="feature-card bg-slate-900 p-8 rounded-2xl border border-slate-800">
                         <div className="mb-4 text-green-400">
-                            {/* SVG Icon for Backend */}
+                            
                             <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 12h14M12 5l7 7-7 7"></path></svg>
                         </div>
                         <h3 className="text-2xl font-bold mb-2">{isMounted ? t('why_choose_card2_title') : 'Robust Backend Logic'}</h3>
@@ -78,10 +78,10 @@ const WhyChoose = () => {
                         </p>
                     </div>
 
-                    {/* Feature Card 3: Modern Technologies */}
+                   
                     <div className="feature-card bg-slate-900 p-8 rounded-2xl border border-slate-800">
                         <div className="mb-4 text-green-400">
-                            {/* SVG Icon for Technology */}
+                         
                             <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                         </div>
                         <h3 className="text-2xl font-bold mb-2">{isMounted ? t('why_choose_card3_title') : 'Modern Technologies'}</h3>

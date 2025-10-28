@@ -16,11 +16,9 @@ const CallToAction = () => {
     const buttonRef = useRef(null);
     const textRef = useRef(null);
 
-    // GSAP animations will go here
-    useEffect(() => {
-        // We'll add the GSAP code in the next step
-    }, []);
-    // In CallToAction.jsx, inside the component
+    
+    
+    
 
     useEffect(() => {
         const section = sectionRef.current;

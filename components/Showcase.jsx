@@ -1,4 +1,4 @@
-"use client"; // This component uses hooks, so it must be a client component.
+"use client";
 
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 
 
-// We must register the ScrollTrigger plugin with GSAP to activate it
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -17,16 +17,15 @@ const Showcase = () => {
     useEffect(() => {
         setIsMounted(true);
     }, []);
-    // --- STATE MANAGEMENT ---
+   
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    // --- REFS ---
     const sectionRef = useRef(null);
     const stickyContainerRef = useRef(null);
     const bannerRef = useRef(null);
-    const videoRef = useRef(null); // Adding ref for the video layer
+    const videoRef = useRef(null);
 
-    // --- ANIMATION LOGIC ---
+    
     useEffect(() => {
         let ctx = gsap.context(() => {
             const tl = gsap.timeline({
@@ -38,9 +37,9 @@ const Showcase = () => {
                 }
             });
 
-            // Action 1: Animate the Play Button Banner
+            
             tl.to(bannerRef.current, { yPercent: -100 });
-            // Action 2: Animate the video layer to reveal the image
+           
             tl.to(videoRef.current, { yPercent: -100 });
 
         }, sectionRef);
@@ -53,12 +52,9 @@ const Showcase = () => {
             <section ref={sectionRef} className="relative h-[100vh] md:h-[160vh] bg-black">
                 <div ref={stickyContainerRef} className="sticky top-0 md:h-screen h-[50vh] overflow-hidden">
 
-                    {/* Actor 1 (Bottom Layer): The Background Image */}
-                    {/* <div className="absolute inset-0 z-10 ">
-                        <img src="/showcase-bg.jpg" alt="Creative showcase background" className="w-full h-full object-cove contrast-100 brightness-60" />
-                    </div> */}
+                   
                     <div className="absolute inset-0 z-10  ">
-                        {/* And we add the filter and blend mode classes to the image itself */}
+                        
                         <img
                             src="/showcase-bg.jpg"
                             alt="Creative showcase background"
@@ -66,16 +62,14 @@ const Showcase = () => {
                         />
                     </div>
 
-                    {/* Actor 2 (Middle Layer): The Video */}
+                    
                     <div ref={videoRef} className="absolute inset-0 z-20">
-                        {/* <video loop muted autoPlay playsInline className="w-full h-full object-cover">
-                            <source src="/showcase-video.mp4" type="video/mp4" />
-                        </video> */}
+                  
                     </div>
 
-                    {/* Actor 3 (Top Layer): The Play Button Banner */}
+                    
                     <div ref={bannerRef} className="absolute inset-0 z-30 flex flex-col items-center justify-center text-white 
-                    bg-[#020617]/60 backdrop-blur-sm"> {/* <-- THE CHANGE IS HERE */}
+                    bg-[#020617]/60 backdrop-blur-sm">
                         <button
                             onClick={() => setIsModalOpen(true)}
                             className="group w-24 h-24 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/20"
@@ -87,7 +81,7 @@ const Showcase = () => {
                 </div>
             </section>
 
-            {/* --- THE VIDEO LIGHTBOX MODAL --- */}
+          
             {isModalOpen && (
                 <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80 backdrop-blur-md">
                     <div className="relative w-full max-w-4xl">

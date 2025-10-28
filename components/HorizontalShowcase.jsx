@@ -3,10 +3,10 @@ import React, { useRef, useEffect, useState, createRef, useLayoutEffect } from '
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import './HorizontalShowcase.css'; // We'll create this next
+import './HorizontalShowcase.css'; 
 import { ArrowRight, X, Github } from 'lucide-react';
 
-// At the top of HorizontalShowcase.jsx
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,7 +21,7 @@ const projects = [
         videoSrc: "/hero-video.mp4", // Add path to video
         screenshots: ["/image10.jpg", "/image10.jpg"], // Add paths to screenshots
         detailedInfo: "Here you can write a long, detailed paragraph about the project's goals, the problems you solved, your technical approach, and the final results. This demonstrates your thinking process.",
-        repoLink: "https://github.com/your-username/project-one-repo" // ✅ Add this
+        repoLink: "https://github.com/your-username/project-one-repo"
 
     },
     {

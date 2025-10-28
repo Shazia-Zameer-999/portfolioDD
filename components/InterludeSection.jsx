@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useRef, useEffect,useState } from 'react';
-import './InterludeSection.css'; // We will create this CSS file next
-import { ArrowDown } from 'lucide-react'; // 'lucide-react' is great for icons
+import './InterludeSection.css'; 
+import { ArrowDown } from 'lucide-react'; 
 import { useTranslation } from 'react-i18next';
 
 
@@ -15,11 +15,10 @@ const InterludeSection = () => {
     }, []);
     const sectionRef = useRef(null);
 
-    // This effect tracks the mouse to move the spotlight
     useEffect(() => {
         const handleMouseMove = (e) => {
             if (sectionRef.current) {
-                // We use CSS custom properties to pass mouse coordinates to the CSS
+                
                 sectionRef.current.style.setProperty('--mouse-x', `${e.clientX}px`);
                 sectionRef.current.style.setProperty('--mouse-y', `${e.clientY}px`);
             }
@@ -27,7 +26,7 @@ const InterludeSection = () => {
 
         window.addEventListener('mousemove', handleMouseMove);
 
-        // Cleanup: remove the event listener when the component unmounts
+     
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
         };

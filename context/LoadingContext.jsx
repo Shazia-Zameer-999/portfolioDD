@@ -1,5 +1,4 @@
-// src/context/LoadingContext.jsx
-"use client"; // This is a client-side context
+"use client"; 
 import React, { createContext, useState, useContext } from 'react';
 
 const LoadingContext = createContext();

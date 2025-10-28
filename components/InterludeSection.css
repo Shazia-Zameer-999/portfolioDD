@@ -58,7 +58,7 @@
 .interlude-subheading {
   font-family: 'Inter', sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: #a0b3d1; /* A muted, desaturated blue-gray */
+  color: #a0b3d1; 
   margin-top: 1rem;
   opacity: 0.8;
 }

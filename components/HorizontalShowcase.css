@@ -1,40 +1,36 @@
-/* HorizontalShowcase.css */
-
-/* The main container that will be pinned */
 .showcase-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* It will be pinned for the height of the viewport */
-  overflow: hidden; /* This is VERY important */
-  background-color: #0e172b; /* Your dark background color */
+  height: 100vh;
+  overflow: hidden; 
+  background-color: #0e172b; 
 }
 
-/* The wrapper that moves horizontally */
+
 .horizontal-wrapper {
   position: relative;
   height: 100%;
-  display: flex; /* This makes the panels line up side-by-side */
-  flex-wrap: nowrap; /* Ensures they don't wrap to the next line */
+  display: flex; 
+  flex-wrap: nowrap; 
   
-  /* The width is the number of panels times 100% of the viewport width */
-  /* For 2 projects, it's 200vw. For 3, it's 300vw, etc. */
-  width: 200vw; /* Adjust this based on the number of projects */
+  
+  width: 200vw; 
 }
 
-/* Each individual project panel */
+
 .project-panel {
-  width: 100vw; /* Each panel takes up the full screen width */
+  width: 100vw; 
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 4rem;
-  flex-shrink: 0; /* Prevents panels from shrinking */
+  flex-shrink: 0; 
   color: #e0e7ff;
 }
 
-/* Styling for the content within the panel */
+
 .project-details {
   flex: 1;
   max-width: 500px;
@@ -60,13 +56,13 @@
 
 .tech-stack span {
   background-color: rgba(163, 255, 180, 0.1);
-  color: #a3ffb4; /* Using your brand green */
+  color: #a3ffb4; 
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   font-size: 0.9rem;
 }
 
-/* Styling for the image container */
+
 .project-image {
   flex: 1;
   position: relative;
@@ -76,26 +72,26 @@
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-/* Add this at the end of HorizontalShowcase.css */
+
 
 @media (max-width: 768px) {
-  /* On mobile, the main section's height is automatic */
+  
   .showcase-section {
     height: auto;
   }
 
-  /* The wrapper becomes a vertical container */
+  
   .horizontal-wrapper {
-    width: 100%; /* Reset the width */
-    flex-direction: column; /* Stack panels vertically */
+    width: 100%; 
+    flex-direction: column; 
   }
 
-  /* Each panel is still a full screen, but scrolls vertically */
+  
   .project-panel {
     width: 100%;
     height: 100vh;
-    flex-direction: column; /* Stack image and details vertically */
-    padding: 2rem; /* Reduce padding for smaller screens */
+    flex-direction: column; 
+    padding: 2rem; 
     gap: 1rem;
   }
   
@@ -105,7 +101,7 @@
   }
 
   .project-details h2 {
-    font-size: 2rem; /* Smaller font size for mobile */
+    font-size: 2rem; 
   }
 
   .tech-stack {
@@ -113,55 +109,53 @@
   }
   
   .project-image {
-    height: 40%; /* Adjust image height */
+    height: 40%; 
   }
 }
-/* In HorizontalShowcase.css */
+
 
 .know-more-btn {
-  /* Layout and Spacing */
+  
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
   
-  /* Base Style (Ghost Button) */
-  background: transparent;
-  border: 1px solid #a3ffb4; /* Your brand's green */
-  border-radius: 50px; /* A softer, rounded rectangle */
   
-  /* Text and Font */
+  background: transparent;
+  border: 1px solid #a3ffb4;
+  border-radius: 50px; 
+  
+  
   color: #a3ffb4;
   font-weight: 500;
   
-  /* Smooth Transitions */
+  
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
 
-/* --- Interactive Hover State --- */
+
 .know-more-btn:hover {
-  /* 1. Fill with a subtle background color */
   background: rgba(163, 255, 180, 0.1);
   
-  /* 2. Add a glow effect */
+  
   box-shadow: 0 0 20px rgba(163, 255, 180, 0.25);
   
-  /* 3. Add a subtle "lift" effect */
+
   transform: translateY(-2px);
 }
 
-/* Animate the icon inside the button */
+
 .know-more-icon {
   transition: transform 0.3s ease-out;
 }
 
 .know-more-btn:hover .know-more-icon {
-  /* 4. Make the arrow slide to the right on hover */
   transform: translateX(4px);
 }
-/* Add these styles to the end of HorizontalShowcase.css */
+
 
 .project-overlay {
   position: fixed;
@@ -236,49 +230,49 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  background-color: #0a0f18; /* A dark placeholder color */
+  background-color: #0a0f18; 
 }
 
 .detailed-info {
   line-height: 1.7;
   color: #a0b3d1;
-  max-width: 800px; /* Makes long text easier to read */
+  max-width: 800px; 
 }
-/* Add these styles to HorizontalShowcase.css */
+
 
 .overlay-header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  flex-wrap: wrap; /* Allows button to wrap on small screens */
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
 .overlay-content h3 {
-  margin-bottom: 0; /* Remove margin from h3 since it's now in a flex container */
+  margin-bottom: 0;
 }
 
 .repo-link-btn {
-  /* Layout */
+ 
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   
-  /* Style */
-  background-color: rgba(255, 255, 255, 0.05); /* Very subtle background */
+ 
+  background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1rem;
-  border-radius: 999px; /* Pill shape */
-  color: #a0b3d1; /* Muted text color */
+  border-radius: 999px; 
+  color: #a0b3d1; 
   text-decoration: none;
   font-weight: 500;
   
-  /* Interaction */
+ 
   transition: all 0.2s ease;
 }
 
 .repo-link-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #e0e7ff; /* Brighter text on hover */
-  border-color: rgba(163, 255, 180, 0.5); /* Use brand green for border highlight */
+  color: #e0e7ff; 
+  border-color: rgba(163, 255, 180, 0.5); 
 }

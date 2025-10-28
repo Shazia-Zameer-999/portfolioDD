@@ -1,46 +1,45 @@
-/* ElasticString.css */
+
 
 .elastic-string-section {
   position: relative;
   width: 100%;
-  padding: 4rem 1rem; /* Adjust total vertical padding here */
-  background: linear-gradient(180deg, #0e172b 0%, #17243d 50%, #0e172b 100%); /* Subtle vertical gradient */
+  padding: 4rem 1rem; 
+  background: linear-gradient(180deg, #0e172b 0%, #17243d 50%, #0e172b 100%);
   text-align: center;
-  overflow: hidden; /* Important for clean edges */
+  overflow: hidden; 
 }
 
-/* Framing Text */
 .string-intro-text,
 .string-outro-text {
   font-size: clamp(1rem, 2vw, 1.25rem);
-  color: #a0b3d1; /* Muted text color */
-  margin: 0 auto 2rem auto; /* Top text has more bottom margin */
+  color: #a0b3d1; 
+  margin: 0 auto 2rem auto; 
   max-width: 800px;
   line-height: 1.6;
 }
 
 .string-outro-text {
-  margin: 2rem auto 0 auto; /* Bottom text has more top margin */
+  margin: 2rem auto 0 auto; 
 }
 
 .string-interactive-area {
   position: relative;
   width: 100%;
   cursor: pointer;
-  padding: 0; /* No internal padding for the SVG area */
-  /* We use before/after for lines now, not the container itself */
+  padding: 0; 
+  
 }
 
-/* Updated SVG path styling for multiple, thinner lines */
+
 .string-interactive-area svg path {
-  stroke: #a3ffb4; /* Your brand's green color */
-  stroke-width: 1; /* Thinner lines */
+  stroke: #a3ffb4; 
+  stroke-width: 1; 
   fill: transparent;
-  stroke-linecap: round; /* Smoother line caps */
+  stroke-linecap: round; 
   opacity: 0.8;
 }
 
-/* The gradient borders are now added to the elastic-string-section for cleaner separation */
+
 .elastic-string-section::before {
   content: '';
   position: absolute;
@@ -63,7 +62,7 @@
   opacity: 0.5;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .elastic-string-section {
     padding: 3rem 0.5rem;

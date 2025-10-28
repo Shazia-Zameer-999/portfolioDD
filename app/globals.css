@@ -25,7 +25,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* --- Preloader Animation --- */
 .loader-svg {
   animation: rotate 2s linear infinite;
 }
@@ -70,14 +69,11 @@ body {
   animation-delay: -0.4s;
 }
 
-/* --- Custom Cursor Styles --- */
 
-/* Hide the default system cursor for the entire page */
 body {
   cursor: none;
 }
 
-/* Style for the small, solid dot that moves instantly */
 .cursor-dot {
   position: fixed;
   top: 0;
@@ -92,14 +88,12 @@ body {
   transition: transform 0.001s ease-out;
 }
 
-/* Style for the larger, hollow circle that follows with a delay */
 .cursor-outline {
   position: fixed;
   top: 0;
   left: 0;
   width: 40px;
   height: 40px;
-  /* border: 2px solid #06df73; */
   border: 2px solid #ffffff;
   border-radius: 50%;
   pointer-events: none;
@@ -107,44 +101,39 @@ body {
   z-index: 9999;
   transition: all 0.1s ease-out;
 }
-/* src/app/globals.css */
 
-/* --- Modern Animated Underline Hover Effect --- */
 
 .animated-underline {
-  /* This is the anchor point for our virtual underline */
+
   position: relative;
-  /* Add some padding to prevent the line from touching the text */
+
   padding-bottom: 4px;
 }
 
-/* This is our "virtual" underline element */
+
 .animated-underline::after {
-  content: ""; /* This is required for pseudo-elements to appear */
-  position: absolute; /* Position it relative to the parent text */
-  bottom: 0; /* Place it at the very bottom */
-  left: 0; /* Start it from the left edge */
+  content: ""; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
 
-  width: 100%; /* Make it as wide as the text element */
-  height: 2px; /* This is the thickness of the underline */
-  background-color: #06df73; /* Your vibrant green theme color */
+  width: 100%; 
+  height: 2px; 
+  background-color: #06df73; 
 
-  /* THIS IS THE MAGIC:
-     - Start with the line scaled down to zero width (invisible)
-     - Set the origin to the left, so it "grows" from the left
-  */
+ 
   transform: scaleX(0);
   transform-origin: center;
 
-  /* This is the animation itself: a smooth 0.3-second transition */
+  
   transition: transform 0.3s ease-in-out;
 }
 
-/* When we hover over the main text element... */
+
 .animated-underline:hover::after {
-  /* ...scale the virtual underline up to its full width (100%) */
+  
   transform: scaleX(1);
 }
 
 
-/* Anime section */
+
