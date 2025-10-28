@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap'; // We'll use GSAP for the smooth "follow" animation
-import '../i18n';
 
 
 const CustomCursor = () => {

@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import TransitionLink from './TransitionLink';
 import { useTranslation } from 'react-i18next';
-import '../i18n';
 
 
 

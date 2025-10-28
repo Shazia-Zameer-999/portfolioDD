@@ -5,7 +5,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import Typed from 'typed.js';
 import TransitionLink from './TransitionLink';
-import '../i18n';
 
 
 const Hero = () => {

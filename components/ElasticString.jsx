@@ -3,7 +3,6 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import './ElasticString.css';
 import { useTranslation } from 'react-i18next';
-import '../i18n';
 
 
 const ElasticString = () => {

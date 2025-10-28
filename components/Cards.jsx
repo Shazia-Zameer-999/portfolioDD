@@ -6,7 +6,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
-import '../i18n';
 
 
 

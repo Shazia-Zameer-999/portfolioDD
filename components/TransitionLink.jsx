@@ -2,7 +2,6 @@
 import { useLoading } from '@/context/LoadingContext';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import '../i18n';
 
 
 const TransitionLink = ({ href, children, ...props }) => {

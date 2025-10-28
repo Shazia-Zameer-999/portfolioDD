@@ -3,7 +3,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import './CallToAction.css';
 import { useTranslation } from 'react-i18next';
-import '../i18n';
 
 
 

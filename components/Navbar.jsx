@@ -4,7 +4,6 @@ import TransitionLink from './TransitionLink';
 import { gsap } from 'gsap';
 import Logo from './Logo';
 import { useTranslation } from 'react-i18next';
-import '../i18n';
 
 
 

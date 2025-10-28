@@ -5,7 +5,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './HorizontalShowcase.css'; // We'll create this next
 import { ArrowRight, X, Github } from 'lucide-react';
-import '../i18n';
 
 // At the top of HorizontalShowcase.jsx
 
