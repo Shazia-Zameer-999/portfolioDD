@@ -9,13 +9,19 @@ import { useTranslation, Trans } from 'react-i18next';
 
 
 const page = ({ }) => {
-    // const heading = "Fun Facts About Me";
+
     const { t } = useTranslation();
     const [isMounted, setIsMounted] = useState(false);
     useEffect(() => {
         setIsMounted(true);
     }, []);
-    const funFacts = t('about.funFacts.items', { returnObjects: true });
+    //change 2
+    // const funFacts = t('about.funFacts.items', { returnObjects: true });
+    // A temporary, hard-coded array for testing
+const funFacts = [
+    { icon: "💡", fact: "Test Fact 1", color: "green-400" },
+    { icon: "🚀", fact: "Test Fact 2", color: "blue-400" },
+];
 
 
 
