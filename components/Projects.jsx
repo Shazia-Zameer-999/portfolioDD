@@ -55,13 +55,13 @@ const Projects = () => {
                         <p className="text-gray-400 mb-6">
                             {isMounted ? t('passop_desc') : "I’m Daten — a developer who loves blending creativity with logic. I build modern websites and apps that don’t just work — they connect, engage, and inspire. Every line of code reflects my curiosity and craft."}
                         </p>
-                        {/* You can add a screenshot here if you like */}
+                    
                         <TransitionLink href="/projects" className="text-green-400 font-semibold hover:underline ">
                             {isMounted ? t('passop_cta') : "Explore My Work →"}
                         </TransitionLink>
                     </div>
 
-                    {/* --- ABOUT ME CELL (Small Cell) --- */}
+                    
                     <div className="project-card bg-slate-900 p-8 rounded-2xl shadow-lg flex flex-col items-center text-center  hover:shadow-green-500/20 transition-shadow">
                         <img
                             src="profile.svg"
@@ -72,7 +72,7 @@ const Projects = () => {
                         <p className="text-gray-400">{isMounted ? t('about_me_desc') : "Full-Stack Developer"}</p>
                     </div>
 
-                    {/* --- MORE PROJECTS (Small Cells) --- */}
+                    
                     <div className="project-card bg-slate-900 p-8 rounded-2xl shadow-lg hover:shadow-green-500/20 transition-shadow">
                         <h3 className="text-3xl font-bold text-white mb-4">{isMounted ? t('portfolio_title') : "Portfolio Website"}</h3>
                         <p className="text-gray-400 mb-6">
