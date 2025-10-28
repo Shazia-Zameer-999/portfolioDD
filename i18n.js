@@ -12,12 +12,16 @@ i18n
         fallbackLng: 'en',
         debug: process.env.NODE_ENV === 'development',
 
-        backend: {
-            loadPath: '/locales/{{lng}}/translation.json', // ✅ Explicitly tell it where to look
-        },
-
         interpolation: {
             escapeValue: false,
+        },
+
+        backend: {
+            // ✅ Use absolute path for both dev and build (important for Vercel)
+            loadPath:
+                typeof window !== 'undefined'
+                    ? '/locales/{{lng}}/translation.json'
+                    : 'public/locales/{{lng}}/translation.json',
         },
     });
 

@@ -1,6 +1,7 @@
+"use client"
 import React from "react"
 
-const Card = ({ src, skill, info ,className}) => {
+const Card = ({ src, skill, info, className }) => {
     return (
         <div className={`relative max-w-sm overflow-hidden rounded-2xl 
       bg-gradient-to-br from-gray-900 via-gray-800 to-black 
