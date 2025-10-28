@@ -15,20 +15,14 @@ const page = ({ }) => {
     useEffect(() => {
         setIsMounted(true);
     }, []);
-    //change 2
-    // const funFacts = t('about.funFacts.items', { returnObjects: true });
-    // A temporary, hard-coded array for testing
-const funFacts = [
-    { icon: "💡", fact: "Test Fact 1", color: "green-400" },
-    { icon: "🚀", fact: "Test Fact 2", color: "blue-400" },
-];
+    const funFacts = t('about.funFacts.items', { returnObjects: true });
 
 
 
 
     return (
         <>
-            
+
             <ImageSlider src1="/about_img/image1.jpg" src2="/about_img/image2.jpg" src3="/about_img/image3.jpg" title1={isMounted ? t('about.hero.title1') : "Fuelled by Curiosity."} title2={isMounted ? t('about.hero.title2') : "Driven by Purpose."} title3={isMounted ? t('about.hero.title3') : "The Human Element."} page_name={isMounted ? t('about.hero.page_name') : "About"} />
 
             <section className="py-16 px-6 bg-gray-900 relative overflow-hidden">
@@ -92,49 +86,54 @@ const funFacts = [
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full opacity-10 animate-pulse-slow"></div>
             </section>
             <section className="py-16 px-6 bg-gray-900 relative overflow-hidden">
-              
+
                 <div className="flex flex-col items-center my-16">
                     {/* Main Heading */}
-                    <motion.h2
-                        className="text-4xl md:text-6xl font-extrabold text-center 
+                    {isMounted && (
+                        <>
+                            <motion.h2
+                                className="text-4xl md:text-6xl font-extrabold text-center 
                                    bg-gradient-to-r from-green-300 via-white to-green-500 
                                    bg-clip-text text-transparent tracking-wider drop-shadow-lg"
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: 'easeOut' }}
-                    >
-                        {isMounted && t('about.funFacts.heading').split("").map((char, index) => (
-                            <motion.span
-                                key={index}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                            >
+                                {isMounted && t('about.funFacts.heading').split("").map((char, index) => (
+                                    <motion.span
+                                        key={index}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: index * 0.05, duration: 0.3 }}
+                                        className="inline-block"
+                                    >
+                                        {char}
+                                    </motion.span>
+                                ))}
+                            </motion.h2>
+
+                            {/* Glowing Animated Underline */}
+                            <motion.div
+                                className="h-1 w-24 md:w-40 bg-gradient-to-r from-green-300 via-white to-green-500 rounded-full mt-4 shadow-[0_0_12px_rgba(34,197,94,0.8)]"
+                                initial={{ scaleX: 0 }}
+                                whileInView={{ scaleX: 1 }}
+                                transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+                                style={{ originX: 0.5 }}
+                            />
+
+                            {/* Subtitle / Tagline */}
+                            <motion.p
+                                className="mt-6 text-gray-200 text-center text-lg md:text-xl max-w-2xl italic"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: index * 0.05, duration: 0.3 }}
-                                className="inline-block"
+                                transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
                             >
-                                {char}
-                            </motion.span>
-                        ))}
-                    </motion.h2>
-
-                    {/* Glowing Animated Underline */}
-                    <motion.div
-                        className="h-1 w-24 md:w-40 bg-gradient-to-r from-green-300 via-white to-green-500 rounded-full mt-4 shadow-[0_0_12px_rgba(34,197,94,0.8)]"
-                        initial={{ scaleX: 0 }}
-                        whileInView={{ scaleX: 1 }}
-                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-                        style={{ originX: 0.5 }}
-                    />
-
-                    {/* Subtitle / Tagline */}
-                    <motion.p
-                        className="mt-6 text-gray-200 text-center text-lg md:text-xl max-w-2xl italic"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-                    >
-                        {isMounted ? t('about.funFacts.subheading') : "Little sparks that define who I am ✨"}
-                    </motion.p>
+                                {isMounted ? t('about.funFacts.subheading') : "Little sparks that define who I am ✨"}
+                            </motion.p>
+                        </>
+                    )}
                 </div>
+
 
                 {/* Facts Grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
@@ -159,10 +158,10 @@ const funFacts = [
                 {/* Background Animations */}
                 <div className="absolute top-0 left-0 w-72 h-72 bg-green-500 rounded-full opacity-10 animate-pulse-slow"></div>
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full opacity-10 animate-pulse-slow"></div>
-            </section>
+            </section >
             {/* <div className="head"></div> */}
 
-            <Cards />
+            < Cards />
         </>
     )
 }
