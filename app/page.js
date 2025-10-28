@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -10,12 +11,12 @@ export default function Home() {
   return (
     <>
       <main className="flex-grow">
-        {/* <Hero /> */}
-        {/* <Projects /> */}
-        {/* <Approach /> */}
-        {/* <WhyChoose /> */}
-        {/* <Showcase /> */}
-        {/* <Skills /> */}
+        <Hero />
+        <Projects />
+        <Approach />
+        <WhyChoose />
+        <Showcase />
+        <Skills />
 
       </main>
     </>
