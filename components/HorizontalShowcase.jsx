@@ -16,7 +16,7 @@ const projects = [
     {
         "title": "Full-Stack Linktree Clone",
         "description": "A dynamic 'link in bio' application where users can claim a unique handle, add a profile picture, and manage a list of their personal links, all stored in a MongoDB database.",
-        "image": "/previeww.mp4",
+        "image": "/previeww1.mp4",
         "tech": [
             "Next.js (App Router)",
             "React",
@@ -24,13 +24,13 @@ const projects = [
             "Tailwind CSS",
             "Vercel"
         ],
-        "videoSrc": "/previeww.mp4",
+        "videoSrc":[ "/previeww2.mp4","/previeww3.mp4"],
         "screenshots": [
             "/show1.png",
             "/show2.png",
             "/show3.png"
         ],
-        "detailedInfo": "This project is a complete, full-stack application that demonstrates a deep understanding of modern web architecture. The primary goal was to build a multi-user 'link in bio' service from scratch. The technical approach involved using the Next.js App Router to create both a static frontend and a server-side backend. A form on the '/generate' page collects user data, which is then securely sent to a custom API endpoint at '/api/add'. This API route handles data validation and saves the user's new profile to a MongoDB Atlas database. The final, public-facing page uses a dynamic route, '/[handle]', which fetches the specific user's data from the database on the server and renders their links. A major technical challenge involved debugging a Vercel deployment error, which was solved by identifying a component using the 'useSearchParams' hook. I fixed the build failure by correctly wrapping this dynamic, client-side component in a React <Suspense> boundary, proving a strong understanding of Next.js static generation and client-side interactivity.",
+        "detailedInfo": "This project is a complete, full-stack application that demonstrates a deep understanding of modern web architecture. The primary goal was to build a multi-user 'link in bio' service from scratch. The technical approach involved using the Next.js App Router to create both a static frontend and a server-side backend. A form on the '/generate' page collects user data, which is then securely sent to a custom API endpoint at '/api/add'. This API route handles data validation and saves the user's new profile to a MongoDB Atlas database. The final, public-facing page uses a dynamic route, '/[handle]', which fetches the specific user's data from the database on the server and renders their links. A major technical challenge involved debugging a Vercel deployment error, which was solved by identifying a component using the 'useSearchParams' hook. I fixed the build failure by correctly wrapping this dynamic, client-side component in a React <Suspense> boundary, proving a strong understanding of Next.js static generation and client-side interactivity. Still working on it...",
         "repoLink": "https://github.com/Shazia-Zameer-999/Linktree",
         "liveDemo": "https://linktreeclone-eta.vercel.app/"
     },
@@ -42,7 +42,7 @@ const projects = [
         videoSrc: "/showcase-video2.mp4",
         screenshots: ["/image20.jpg", "/image20.jpg"],
         detailedInfo: "This project was a deep dive into performance optimization for complex animations. The main challenge was to ensure a smooth 60fps experience on all devices while handling a large amount of data.",
-        repoLink: "https://github.com/your-username/project-two-repo" // ✅ Add this
+        repoLink: "https://github.com/your-username/project-two-repo"
 
     },
 ];
