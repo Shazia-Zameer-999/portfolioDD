@@ -24,7 +24,7 @@ const projects = [
             "Tailwind CSS",
             "Vercel"
         ],
-        "videoSrc":[ "/previeww2.mp4","/previeww3.mp4"],
+        "videoSrc":"/previeww2.mp4",
         "screenshots": [
             "/show1.png",
             "/show2.png",
