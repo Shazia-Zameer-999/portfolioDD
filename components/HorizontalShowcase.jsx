@@ -116,7 +116,7 @@ const HorizontalShowcase = () => {
                         <div key={index} ref={panelRefs.current[index]} className="project-panel">
                             <div className="project-image">
                                 {/* <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" /> */}
-                                <video src={project.image}></video>
+                                <video src={project.image} controls autoPlay muted loop></video>
                             </div>
                             <div className="project-details">
                                 <h2>{project.title}</h2>
