@@ -160,7 +160,17 @@ const HorizontalShowcase = () => {
                         <p className="detailed-info">
                             {selectedProject.detailedInfo}
                         </p>
-                        <p><a href={selectedProject.liveDemo}>Link to the project</a></p>
+                        <a
+                            href={selectedProject.liveDemo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-green-400 font-medium hover:text-green-300 hover:underline transition-colors duration-300"
+                        >
+                            Link to the project
+                            <span className="ml-1.5 transform group-hover:translate-x-1 transition-transform duration-300">
+                                &rarr;
+                            </span>
+                        </a>
                     </div>
                 </div>
             )}
