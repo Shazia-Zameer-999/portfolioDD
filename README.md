@@ -50,7 +50,7 @@ This portfolio showcases my work as a **Full Stack Developer**, highlighting smo
 ## 🧩 Sneak Peek
 
 <p align="center">
-  <img src="/project_preview.gif" width="700" alt="Project Preview"/>
+  <img src="./public/project_preview.gif" width="700" alt="Project Preview"/>
 </p>
 
 > 🎥 _A glimpse of my portfolio magic._
