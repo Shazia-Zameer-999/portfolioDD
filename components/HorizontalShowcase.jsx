@@ -16,7 +16,7 @@ const projects = [
     {
         "title": "Full-Stack Linktree Clone",
         "description": "A dynamic 'link in bio' application where users can claim a unique handle, add a profile picture, and manage a list of their personal links, all stored in a MongoDB database.",
-        "image": "/previeww1.mp4",
+        "image": "/previeww3.mp4",
         "tech": [
             "Next.js (App Router)",
             "React",
@@ -24,7 +24,7 @@ const projects = [
             "Tailwind CSS",
             "Vercel"
         ],
-        "videoSrc":"/previeww2.mp4",
+        "videoSrc": "/previeww2.mp4",
         "screenshots": [
             "/show1.png",
             "/show2.png",
