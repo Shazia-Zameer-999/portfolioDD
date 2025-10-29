@@ -299,9 +299,6 @@ const HorizontalShowcase = () => {
 
                 if (isDesktop) {
                     const scrollWidth = horizontalWrapperRef.current.offsetWidth - window.innerWidth;
-                    console.log("Window Width:", window.innerWidth);
-                    console.log("Wrapper Offset Width:", horizontalWrapperRef.current.offsetWidth);
-                    console.log("Calculated Scroll Width:", scrollWidth);
                     gsap.to(horizontalWrapperRef.current, {
                         x: -scrollWidth,
                         ease: "none",

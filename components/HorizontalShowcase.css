@@ -258,7 +258,9 @@
 /* debug helper (remove when done) */
 /* .horizontal-wrapper { outline: 2px dashed rgba(163,255,180,0.5); } */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .showcase-section {
   position: relative;
@@ -272,15 +274,15 @@
   position: relative;
   height: 100%;
   display: flex;
-  flex-wrap: nowrap;      /* don't wrap panels */
-  width: max-content;     /* ensure wrapper expands to fit all panels */
+  flex-wrap: nowrap; /* don't wrap panels */
+  width: max-content; /* ensure wrapper expands to fit all panels */
   min-height: 100%;
 }
 
 .project-panel {
   /* ensure each panel is exactly one viewport width and doesn't shrink */
   flex: 0 0 100vw;
-  width: 100vw;           /* optional redundancy */
+  width: 100vw; /* optional redundancy */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -395,11 +397,16 @@
   cursor: pointer;
 }
 
-.know-more-btn:hover { transform: translateY(-2px); }
+.know-more-btn:hover {
+  transform: translateY(-2px);
+}
 
 .project-overlay {
   position: fixed;
-  inset: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: flex-end;
@@ -422,5 +429,87 @@
   transform: translateY(100%);
   animation: slide-up 0.5s forwards ease-out;
 }
+.overlay-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.overlay-content h3 {
+  margin-bottom: 0;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease;
+}
 
-@keyframes slide-up { to { transform: translateY(0); } }
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.overlay-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.repo-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: #a0b3d1;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.repo-link-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e7ff;
+  border-color: rgba(163, 255, 180, 0.5);
+}
+.media-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.media-gallery video,
+.media-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #0a0f18;
+}
+.detailed-info {
+  line-height: 1.7;
+  color: #a0b3d1;
+  max-width: 800px;
+}
+
+.horizontal-wrapper {
+  outline: 2px dashed rgba(163, 255, 180, 0.5);
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(0);
+  }
+}
