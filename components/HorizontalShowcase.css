@@ -2,34 +2,39 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden; 
-  background-color: #0e172b; 
+  overflow: hidden;
+  background-color: #0e172b;
 }
 
-
+/* 
 .horizontal-wrapper {
   position: relative;
   height: 100%;
   display: flex; 
   flex-wrap: nowrap; 
-  
-  
   width: 200vw; 
+} */
+
+.horizontal-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200vw;
+  width: max-content;
 }
 
-
 .project-panel {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 4rem;
-  flex-shrink: 0; 
+  flex-shrink: 0;
   color: #e0e7ff;
 }
-
 
 .project-details {
   flex: 1;
@@ -56,12 +61,11 @@
 
 .tech-stack span {
   background-color: rgba(163, 255, 180, 0.1);
-  color: #a3ffb4; 
+  color: #a3ffb4;
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   font-size: 0.9rem;
 }
-
 
 .project-image {
   flex: 1;
@@ -73,80 +77,67 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-
 @media (max-width: 768px) {
-  
   .showcase-section {
     height: auto;
   }
 
-  
   .horizontal-wrapper {
-    width: 100%; 
-    flex-direction: column; 
+    width: 100%;
+    flex-direction: column;
   }
 
-  
   .project-panel {
     width: 100%;
     height: 100vh;
-    flex-direction: column; 
-    padding: 2rem; 
+    flex-direction: column;
+    padding: 2rem;
     gap: 1rem;
   }
-  
+
   .project-details {
     max-width: 100%;
     text-align: center;
   }
 
   .project-details h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .tech-stack {
     justify-content: center;
   }
-  
+
   .project-image {
-    height: 40%; 
+    height: 40%;
   }
 }
 
-
 .know-more-btn {
-  
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
-  
-  
+
   background: transparent;
   border: 1px solid #a3ffb4;
-  border-radius: 50px; 
-  
-  
+  border-radius: 50px;
+
   color: #a3ffb4;
   font-weight: 500;
-  
-  
+
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
 
-
 .know-more-btn:hover {
   background: rgba(163, 255, 180, 0.1);
-  
-  
+
   box-shadow: 0 0 20px rgba(163, 255, 180, 0.25);
-  
 
   transform: translateY(-2px);
 }
-
 
 .know-more-icon {
   transition: transform 0.3s ease-out;
@@ -155,7 +146,6 @@
 .know-more-btn:hover .know-more-icon {
   transform: translateX(4px);
 }
-
 
 .project-overlay {
   position: fixed;
@@ -210,7 +200,7 @@
 }
 
 .close-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .overlay-content h3 {
@@ -230,15 +220,14 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  background-color: #0a0f18; 
+  background-color: #0a0f18;
 }
 
 .detailed-info {
   line-height: 1.7;
   color: #a0b3d1;
-  max-width: 800px; 
+  max-width: 800px;
 }
-
 
 .overlay-header {
   display: flex;
@@ -253,26 +242,23 @@
 }
 
 .repo-link-btn {
- 
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  
- 
+
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1rem;
-  border-radius: 999px; 
-  color: #a0b3d1; 
+  border-radius: 999px;
+  color: #a0b3d1;
   text-decoration: none;
   font-weight: 500;
-  
- 
+
   transition: all 0.2s ease;
 }
 
 .repo-link-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #e0e7ff; 
-  border-color: rgba(163, 255, 180, 0.5); 
+  color: #e0e7ff;
+  border-color: rgba(163, 255, 180, 0.5);
 }
