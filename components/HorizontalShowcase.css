@@ -1,4 +1,4 @@
-.showcase-section {
+/* .showcase-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -6,14 +6,7 @@
   background-color: #0e172b;
 }
 
-/* 
-.horizontal-wrapper {
-  position: relative;
-  height: 100%;
-  display: flex; 
-  flex-wrap: nowrap; 
-  width: 200vw; 
-} */
+
 
 .horizontal-wrapper {
   position: relative;
@@ -261,4 +254,173 @@
   background-color: rgba(255, 255, 255, 0.1);
   color: #e0e7ff;
   border-color: rgba(163, 255, 180, 0.5);
+} */
+/* debug helper (remove when done) */
+/* .horizontal-wrapper { outline: 2px dashed rgba(163,255,180,0.5); } */
+
+* { box-sizing: border-box; }
+
+.showcase-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0e172b;
 }
+
+.horizontal-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;      /* don't wrap panels */
+  width: max-content;     /* ensure wrapper expands to fit all panels */
+  min-height: 100%;
+}
+
+.project-panel {
+  /* ensure each panel is exactly one viewport width and doesn't shrink */
+  flex: 0 0 100vw;
+  width: 100vw;           /* optional redundancy */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem;
+  color: #e0e7ff;
+}
+
+.project-details {
+  flex: 1;
+  max-width: 500px;
+}
+
+.project-details h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-details p {
+  font-size: 1.1rem;
+  color: #a0b3d1;
+  margin-bottom: 2rem;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech-stack span {
+  background-color: rgba(163, 255, 180, 0.1);
+  color: #a3ffb4;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.project-image {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make videos/images fill the container so measurements are accurate */
+.project-image video,
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .showcase-section {
+    height: auto;
+  }
+
+  .horizontal-wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .project-panel {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .project-details {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-details h2 {
+    font-size: 2rem;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+
+  .project-image {
+    height: 40%;
+  }
+}
+
+/* Buttons / overlay kept mostly same, minor improvements */
+.know-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 1px solid #a3ffb4;
+  border-radius: 50px;
+  color: #a3ffb4;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.know-more-btn:hover { transform: translateY(-2px); }
+
+.project-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.overlay-content {
+  position: relative;
+  background-color: #0e172b;
+  border-top: 1px solid rgba(163, 255, 180, 0.3);
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  padding: 2rem;
+  overflow-y: auto;
+  color: #e0e7ff;
+  transform: translateY(100%);
+  animation: slide-up 0.5s forwards ease-out;
+}
+
+@keyframes slide-up { to { transform: translateY(0); } }
