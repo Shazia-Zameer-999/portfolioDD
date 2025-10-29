@@ -56,18 +56,7 @@ const projects = [
         "detailedInfo": "BitLinks is a full-stack URL shortening service built with a focus on simplicity and speed using the Next.js App Router. Users submit a long URL via the main page, optionally providing a custom short alias. This data is sent to a dedicated API endpoint (/api/generate) which validates the input, checks for alias uniqueness (or generates a random short ID if no alias is provided), and saves the URL mapping to a MongoDB Atlas database. The application leverages Next.js dynamic routes ('/[shorturl]') to handle redirection. When a user visits a shortened link, this server-side route fetches the corresponding long URL from the database and performs a server-side redirect. Key technical challenges included resolving deployment issues related to environment variables (correctly differentiating between server-side secrets like MONGODB_URI and client-side configuration, opting for relative paths over NEXT_PUBLIC_HOST), and fixing Next.js-specific ESLint errors (replacing `<a>` tags with `<Link>` for internal navigation). The project utilizes Tailwind CSS for styling, Framer Motion for subtle UI animations, and React Hot Toast for user feedback.",
         "repoLink": "https://github.com/Shazia-Zameer-999/BitLinks",
         "liveDemo": "https://bit-links-zeta.vercel.app/"
-    },
-    {
-        title: "Project Three",
-        description: "This project focused on creating a seamless user experience with animations.",
-        video: "/image20.jpg",
-        tech: ["React", "Framer Motion", "TailwindCSS"],
-        videoSrc: "/showcase-video2.mp4",
-        screenshots: ["/image20.jpg", "/image20.jpg"],
-        detailedInfo: "This project was a deep dive into performance optimization for complex animations. The main challenge was to ensure a smooth 60fps experience on all devices while handling a large amount of data.",
-        repoLink: "https://github.com/your-username/project-two-repo"
-
-    },
+    }
 ];
 
 const HorizontalShowcase = () => {
