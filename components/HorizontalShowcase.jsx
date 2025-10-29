@@ -251,28 +251,25 @@ const projects = [
         "repoLink": "https://github.com/Shazia-Zameer-999/BitLinks",
         "liveDemo": "https://bit-links-zeta.vercel.app/"
     }, {
-        "title": "BitLinks - URL Shortener",
-        "description": "A fast, clean, and open-source URL shortener application. Allows users to shorten long URLs and optionally provide a custom alias, storing the mapping in MongoDB.",
-        "video": "/demo_1.mp4",
-        "tech": [
-            "Next.js (App Router)",
-            "React",
-            "MongoDB",
-            "Tailwind CSS",
-            "Vercel",
-            "React Hot Toast",
-            "Framer Motion"
-        ],
-        "videoSrc": "/demo_2.mp4",
-        "screenshots": [
-            "/demo1.png",
-            "/demo2.png",
-            "/demo3.png"
-        ],
-        "detailedInfo": "BitLinks is a full-stack URL shortening service built with a focus on simplicity and speed using the Next.js App Router. Users submit a long URL via the main page, optionally providing a custom short alias. This data is sent to a dedicated API endpoint (/api/generate) which validates the input, checks for alias uniqueness (or generates a random short ID if no alias is provided), and saves the URL mapping to a MongoDB Atlas database. The application leverages Next.js dynamic routes ('/[shorturl]') to handle redirection. When a user visits a shortened link, this server-side route fetches the corresponding long URL from the database and performs a server-side redirect. Key technical challenges included resolving deployment issues related to environment variables (correctly differentiating between server-side secrets like MONGODB_URI and client-side configuration, opting for relative paths over NEXT_PUBLIC_HOST), and fixing Next.js-specific ESLint errors (replacing `<a>` tags with `<Link>` for internal navigation). The project utilizes Tailwind CSS for styling, Framer Motion for subtle UI animations, and React Hot Toast for user feedback.",
-        "repoLink": "https://github.com/Shazia-Zameer-999/BitLinks",
-        "liveDemo": "https://bit-links-zeta.vercel.app/"
-    }
+    "title": "Portfolio Website",
+    "description": "A personal portfolio built using Next.js and Tailwind CSS to showcase my projects and skills.",
+    "video": "/portfolio_preview.mp4",
+    "tech": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Vercel"
+    ],
+    "videoSrc": "/portfolio_preview.mp4",
+    "screenshots": [
+        "/portfolio1.png",
+        "/portfolio2.png"
+    ],
+    "detailedInfo": "This portfolio highlights my design and development projects, featuring smooth animations with Framer Motion, GSAP-powered transitions, and responsive layouts for all devices.",
+    "repoLink": "https://github.com/Shazia-Zameer-999/Portfolio",
+    "liveDemo": "https://portfolio-dd-ebon.vercel.app/"
+}
 ];
 
 const HorizontalShowcase = () => {
