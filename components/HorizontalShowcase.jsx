@@ -16,7 +16,7 @@ const projects = [
     {
         "title": "Full-Stack Linktree Clone",
         "description": "A dynamic 'link in bio' application where users can claim a unique handle, add a profile picture, and manage a list of their personal links, all stored in a MongoDB database.",
-        "image": "/previeww3.mp4",
+        "video": "/previeww3.mp4",
         "tech": [
             "Next.js (App Router)",
             "React",
@@ -35,9 +35,32 @@ const projects = [
         "liveDemo": "https://linktreeclone-eta.vercel.app/"
     },
     {
-        title: "Project Two",
+        "title": "BitLinks - URL Shortener",
+        "description": "A fast, clean, and open-source URL shortener application. Allows users to shorten long URLs and optionally provide a custom alias, storing the mapping in MongoDB.",
+        "video": "/demo_1.mp4",
+        "tech": [
+            "Next.js (App Router)",
+            "React",
+            "MongoDB",
+            "Tailwind CSS",
+            "Vercel",
+            "React Hot Toast",
+            "Framer Motion"
+        ],
+        "videoSrc": "/demo_2.mp4",
+        "screenshots": [
+            "/demo1.png",
+            "/demo2.png",
+            "/demo3.png"
+        ],
+        "detailedInfo": "BitLinks is a full-stack URL shortening service built with a focus on simplicity and speed using the Next.js App Router. Users submit a long URL via the main page, optionally providing a custom short alias. This data is sent to a dedicated API endpoint (/api/generate) which validates the input, checks for alias uniqueness (or generates a random short ID if no alias is provided), and saves the URL mapping to a MongoDB Atlas database. The application leverages Next.js dynamic routes ('/[shorturl]') to handle redirection. When a user visits a shortened link, this server-side route fetches the corresponding long URL from the database and performs a server-side redirect. Key technical challenges included resolving deployment issues related to environment variables (correctly differentiating between server-side secrets like MONGODB_URI and client-side configuration, opting for relative paths over NEXT_PUBLIC_HOST), and fixing Next.js-specific ESLint errors (replacing `<a>` tags with `<Link>` for internal navigation). The project utilizes Tailwind CSS for styling, Framer Motion for subtle UI animations, and React Hot Toast for user feedback.",
+        "repoLink": "https://github.com/Shazia-Zameer-999/BitLinks",
+        "liveDemo": "https://bit-links-zeta.vercel.app/"
+    },
+    {
+        title: "Project Three",
         description: "This project focused on creating a seamless user experience with animations.",
-        image: "/image20.jpg",
+        video: "/image20.jpg",
         tech: ["React", "Framer Motion", "TailwindCSS"],
         videoSrc: "/showcase-video2.mp4",
         screenshots: ["/image20.jpg", "/image20.jpg"],
@@ -116,7 +139,7 @@ const HorizontalShowcase = () => {
                         <div key={index} ref={panelRefs.current[index]} className="project-panel">
                             <div className="project-image">
                                 {/* <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" /> */}
-                                <video src={project.image} controls autoPlay muted loop></video>
+                                <video src={project.video} controls autoPlay muted loop></video>
                             </div>
                             <div className="project-details">
                                 <h2>{project.title}</h2>
