@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState, createRef, useLayoutEffect } from '
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import './HorizontalShowcase.css'; 
+import './HorizontalShowcase.css';
 import { ArrowRight, X, Github } from 'lucide-react';
 
 
@@ -14,15 +14,25 @@ gsap.registerPlugin(ScrollTrigger);
 // Dummy data for your projects
 const projects = [
     {
-        title: "Project One",
-        description: "A description of the project, highlighting the challenges and solutions.",
-        image: "/image10.jpg",
-        tech: ["Next.js", "GSAP", "MongoDB"],
-        videoSrc: "/hero-video.mp4", // Add path to video
-        screenshots: ["/image10.jpg", "/image10.jpg"], // Add paths to screenshots
-        detailedInfo: "Here you can write a long, detailed paragraph about the project's goals, the problems you solved, your technical approach, and the final results. This demonstrates your thinking process.",
-        repoLink: "https://github.com/your-username/project-one-repo"
-
+        "title": "Full-Stack Linktree Clone",
+        "description": "A dynamic 'link in bio' application where users can claim a unique handle, add a profile picture, and manage a list of their personal links, all stored in a MongoDB database.",
+        "image": "/generate_page.png",
+        "tech": [
+            "Next.js (App Router)",
+            "React",
+            "MongoDB",
+            "Tailwind CSS",
+            "Vercel"
+        ],
+        "videoSrc": "/vi.mp4",
+        "screenshots": [
+            "/show1.png",
+            "/show2.png",
+            "/show3.png"
+        ],
+        "detailedInfo": "This project is a complete, full-stack application that demonstrates a deep understanding of modern web architecture. The primary goal was to build a multi-user 'link in bio' service from scratch. The technical approach involved using the Next.js App Router to create both a static frontend and a server-side backend. A form on the '/generate' page collects user data, which is then securely sent to a custom API endpoint at '/api/add'. This API route handles data validation and saves the user's new profile to a MongoDB Atlas database. The final, public-facing page uses a dynamic route, '/[handle]', which fetches the specific user's data from the database on the server and renders their links. A major technical challenge involved debugging a Vercel deployment error, which was solved by identifying a component using the 'useSearchParams' hook. I fixed the build failure by correctly wrapping this dynamic, client-side component in a React <Suspense> boundary, proving a strong understanding of Next.js static generation and client-side interactivity.",
+        "repoLink": "https://github.com/Shazia-Zameer-999/Linktree",
+        "liveDemo": "https://linktreeclone-eta.vercel.app/"
     },
     {
         title: "Project Two",
@@ -150,6 +160,7 @@ const HorizontalShowcase = () => {
                         <p className="detailed-info">
                             {selectedProject.detailedInfo}
                         </p>
+                        <p><a href={selectedProject.liveDemo}>Link to the project</a></p>
                     </div>
                 </div>
             )}
