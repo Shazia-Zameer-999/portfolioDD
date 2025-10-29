@@ -16,7 +16,7 @@ const projects = [
     {
         "title": "Full-Stack Linktree Clone",
         "description": "A dynamic 'link in bio' application where users can claim a unique handle, add a profile picture, and manage a list of their personal links, all stored in a MongoDB database.",
-        "image": "/show4.png",
+        "image": "/previeww.mp4",
         "tech": [
             "Next.js (App Router)",
             "React",
@@ -115,7 +115,8 @@ const HorizontalShowcase = () => {
                         // 4. Assign the ref from our array to each panel div
                         <div key={index} ref={panelRefs.current[index]} className="project-panel">
                             <div className="project-image">
-                                <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" />
+                                {/* <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" /> */}
+                                <video src={project.image}></video>
                             </div>
                             <div className="project-details">
                                 <h2>{project.title}</h2>
