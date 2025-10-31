@@ -273,7 +273,33 @@ const projects = [
         "detailedInfo": "Get Me a Chai is a full-stack crowdfunding platform designed to connect creators directly with their supporters in a simple and fun way. Built using Next.js (App Router) and MongoDB, it allows creators to showcase their work, receive one-time payments, and engage with their community. The application features authentication, personalized creator pages, and smooth payment integration via Razorpay for secure and instant transactions. Currently, the payment gateway operates in test mode, simulating real transactions for demonstration purposes, but the platform is architected to seamlessly transition into live and real-time payments in the future. The UI emphasizes warmth and minimalism, styled with Tailwind CSS and enhanced with Framer Motion animations for a seamless user experience. Users can quickly create their profile pages, share their unique links, and start receiving contributions — all with zero platform fees. Key development challenges included ensuring smooth Razorpay integration in a serverless environment, handling authentication securely across sessions, and maintaining performance optimization on Vercel deployment. This project reflects a blend of technical depth, user empathy, and creative vision, aiming to empower digital creators to monetize their passion effortlessly.",
         "repoLink": "https://github.com/Shazia-Zameer-999/get-me-a-chai",
         "liveDemo": "https://get-me-a-chai-lake-kappa.vercel.app/"
+    }, {
+        "title": "PassOP - Password Manager",
+        "description": "A secure and intuitive full-stack password manager that allows users to store, manage, and update their credentials safely, featuring encrypted authentication and personalized user profiles with avatars.",
+        "video": "/preview-passop.mp4",
+        "tech": [
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Render",
+            "Vercel",
+            "Cloudinary",
+            "JWT Authentication",
+            "Tailwind CSS"
+        ],
+        "videoSrc": "/preview-passop.gif",
+        "screenshots": [
+            "/passop1.png",
+            "/passop2.png",
+            "/passop3.png",
+            "/passop4.png"
+        ],
+        "detailedInfo": "PassOP is a full-stack password management web application built to demonstrate secure user authentication, encrypted data storage, and seamless cloud deployment. The backend, powered by Node.js and Express, handles user authentication using JWT, password hashing with bcrypt, and CRUD operations for password entries stored in MongoDB. The frontend, deployed on Vercel, offers a clean and interactive UI built with React and Tailwind CSS, allowing users to add, edit, and delete their saved credentials. A unique feature of PassOP is its integration with Cloudinary for user avatars, enabling dynamic image uploads stored securely in the cloud. The backend is hosted on Render, ensuring reliability and smooth API communication with the deployed frontend. A major debugging challenge was fixing CORS and avatar update issues, which helped solidify my understanding of RESTful APIs, secure middleware, and deployment pipelines. This project demonstrates real-world, end-to-end full-stack development experience — from authentication and database management to hosting and UI design.",
+        "repoLink": "https://github.com/Shazia-Zameer-999/PassOP-Password-Manager",
+        "liveDemo": "https://pass-op-password-manager-ten.vercel.app"
     }
+
 
 ];
 
