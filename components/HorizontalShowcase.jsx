@@ -251,25 +251,30 @@ const projects = [
         "repoLink": "https://github.com/Shazia-Zameer-999/BitLinks",
         "liveDemo": "https://bit-links-zeta.vercel.app/"
     }, {
-    "title": "Portfolio Website",
-    "description": "A personal portfolio built using Next.js and Tailwind CSS to showcase my projects and skills.",
-    "video": "/portfolio_preview.mp4",
-    "tech": [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Vercel"
-    ],
-    "videoSrc": "/portfolio_preview.mp4",
-    "screenshots": [
-        "/portfolio1.png",
-        "/portfolio2.png"
-    ],
-    "detailedInfo": "This portfolio highlights my design and development projects, featuring smooth animations with Framer Motion, GSAP-powered transitions, and responsive layouts for all devices.",
-    "repoLink": "https://github.com/Shazia-Zameer-999/Portfolio",
-    "liveDemo": "https://portfolio-dd-ebon.vercel.app/"
-}
+        "title": "Get Me a Chai - Creator Crowdfunding Platform",
+        "description": "A full-stack crowdfunding platform that empowers creators to receive direct support from their fans — one chai at a time. Built with a modern tech stack and inspired by platforms like Patreon and Buy Me a Coffee.",
+        "video": "/project_demo32.mp4",
+        "tech": [
+            "Next.js (App Router)",
+            "React",
+            "MongoDB",
+            "Tailwind CSS",
+            "Razorpay Integration",
+            "Framer Motion",
+            "Vercel"
+        ],
+        "videoSrc": "/project_demo3.mp4",
+        "screenshots": [
+            "/pr1.png",
+            "/pr2.png",
+            "/pr3.png",
+            "/pr4.png"
+        ],
+        "detailedInfo": "Get Me a Chai is a full-stack crowdfunding platform designed to connect creators directly with their supporters in a simple and fun way. Built using Next.js (App Router) and MongoDB, it allows creators to showcase their work, receive one-time payments, and engage with their community. The application features authentication, personalized creator pages, and smooth payment integration via Razorpay for secure and instant transactions. Currently, the payment gateway operates in test mode, simulating real transactions for demonstration purposes, but the platform is architected to seamlessly transition into live and real-time payments in the future. The UI emphasizes warmth and minimalism, styled with Tailwind CSS and enhanced with Framer Motion animations for a seamless user experience. Users can quickly create their profile pages, share their unique links, and start receiving contributions — all with zero platform fees. Key development challenges included ensuring smooth Razorpay integration in a serverless environment, handling authentication securely across sessions, and maintaining performance optimization on Vercel deployment. This project reflects a blend of technical depth, user empathy, and creative vision, aiming to empower digital creators to monetize their passion effortlessly.",
+        "repoLink": "https://github.com/Shazia-Zameer-999/get-me-a-chai",
+        "liveDemo": "https://get-me-a-chai-lake-kappa.vercel.app/"
+    }
+
 ];
 
 const HorizontalShowcase = () => {
